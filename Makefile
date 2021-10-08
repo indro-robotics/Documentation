@@ -1,20 +1,18 @@
-# Minimal makefile for Sphinx documentation
-#
+# Make file to generate documentation
 
-# You can set these variables from the command line, and also
-# from the environment for the first two.
-SPHINXOPTS    ?=
-SPHINXBUILD   ?= sphinx-build
-SOURCEDIR     = source
-BUILDDIR      = build
+SOURCE     = source
+OUT        = build
+BUILD      = python3 -m sphinx
+OPTS       =-c .
 
-# Put it first so that "make" without argument is like "make help".
 help:
-	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+	@$(BUILD) -M help "$(SOURCE)" "$(OUT)" $(OPTS)
+	@echo "  multiversion to build documentation for all branches"
 
-.PHONY: help Makefile
+multiversion: Makefile
+	sphinx-multiversion $(OPTS) "$(SOURCE)" build/html
+	@echo "<html><head><meta http-equiv=\"refresh\" content=\"0; url=galactic/index.html\" /></head></html>" > build/html/index.html
 
-# Catch-all target: route all unknown targets to Sphinx using the new
-# "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
+.PHONY: help Makefile multiversion
 %: Makefile
-	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+	@$(BUILD) -M $@ "$(SOURCE)" "$(OUT)" $(OPTS)
