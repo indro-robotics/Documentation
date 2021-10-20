@@ -1,21 +1,13 @@
 .. _GazeboGuide:
 
-**About Gazebo**
+**Gazebo**
 =================
 
 .. toctree::
    :hidden:
    :glob:
 
-   Gazebo/index
+   Gazebo/Installation
 
 
-
-
-
-*Installation*
-------------------
-
-
-*Core Concepts*
-------------------
+Gazebo is a tool used to simulate the real world robots.

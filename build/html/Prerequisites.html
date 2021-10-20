@@ -24,7 +24,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="About ROS" href="ROS.html" />
+    <link rel="next" title="Ubuntu Installation" href="Prerequisites/Ubuntu-Environment.html" />
     <link rel="prev" title="Robot Documentation" href="index.html" /> 
 </head>
 
@@ -44,13 +44,20 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>Prerequisites</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="ROS.html"><strong>About ROS</strong></a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>Prerequisites</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Prerequisites/Ubuntu-Environment.html">Ubuntu Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Prerequisites/Linux-Terminal.html">Terminal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Prerequisites/Python.html">Python</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ROS.html"><strong>ROS</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ROS/Installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ROS/Core-Concepts.html">Core Concepts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ROS/Example.html">Example</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Gazebo.html"><strong>About Gazebo</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Gazebo/index.html">Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Gazebo.html"><strong>Gazebo</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Gazebo/Installation.html">Installation</a></li>
 </ul>
 </li>
 </ul>
@@ -81,43 +88,9 @@
              
   <section id="prerequisites">
 <span id="prerequisites-guide"></span><h1><strong>Prerequisites</strong><a class="headerlink" href="#prerequisites" title="Permalink to this headline"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
 <p>In order to successfully compleat the robotics tutorials and examples, you need the proper environment for the software, along with basic linix and python skills.</p>
-<section id="environment">
-<h2><em>Environment</em><a class="headerlink" href="#environment" title="Permalink to this headline"></a></h2>
-<p>ROS Noetic requirs an Ubuntu 20.04. An easy way to do this is to create a virtual machine</p>
-<dl class="simple">
-<dt>To create an Ubuntu Virtual Machine, first download:</dt><dd><ul class="simple">
-<li><p><a class="reference external" href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a></p></li>
-<li><p><a class="reference external" href="https://ubuntu.com/download/desktop">Ubuntu Desktop</a></p></li>
-</ul>
-</dd>
-<dt>Then create a new virtual machine in virtualbox with</dt><dd><ul class="simple">
-<li><p>2GB-8GB of memory.</p></li>
-<li><p>A new virtual hard disk</p></li>
-<li><p>VDI</p></li>
-<li><p>Dynamically allocated</p></li>
-<li><p>25GB-50GB</p></li>
-</ul>
-</dd>
-</dl>
-<p>In your new VM instance, navigate to settings/system/processor. Change the CPU amount from 1 CPU to 2-4</p>
-<p>Then Navigate to settings/Network and change from NAT to Bridgeed Adapter to set up internet</p>
-<p>Finally start your VM, and Add the disk image ubuntu desktop downloaded previously.</p>
-</section>
-<section id="linux-basics">
-<h2><em>Linux basics</em><a class="headerlink" href="#linux-basics" title="Permalink to this headline"></a></h2>
-<p>Navigating the Linux terminal is an essential requirment when creating documents for ROS and Gazebo.</p>
-<dl class="simple">
-<dt>Basic commands include:</dt><dd><ul class="simple">
-<li><p>ls</p></li>
-<li><p>cd</p></li>
-</ul>
-</dd>
-</dl>
-</section>
-<section id="python-basics">
-<h2><em>Python basics</em><a class="headerlink" href="#python-basics" title="Permalink to this headline"></a></h2>
-</section>
 </section>
 
 
@@ -125,7 +98,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="index.html" class="btn btn-neutral float-left" title="Robot Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="ROS.html" class="btn btn-neutral float-right" title="About ROS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Prerequisites/Ubuntu-Environment.html" class="btn btn-neutral float-right" title="Ubuntu Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
