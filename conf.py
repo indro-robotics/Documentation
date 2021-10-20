@@ -26,6 +26,8 @@ from docutils.parsers.rst import Directive
 
 sys.path.append(os.path.abspath('./sphinx-multiversion'))
 
+#this is the path to my modules on my machine
+#sys.path.append(os.path.abspath('/home/ellahayashi/.local/lib/python2.7/site-packages'))
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
