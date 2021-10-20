@@ -42,8 +42,8 @@ default_role = 'any'
 suppress_warnings = ['image.nonlocal_uri']
 
 # General information about the project.
-project = 'ROS 2 documentation'
-author = 'Open Robotics'
+project = 'Indro Robotics Documentation'
+author = 'Ella Hayashi'
 copyright = '{}, {}'.format(time.strftime('%Y'), author)
 
 # The version info for the project you're documenting, acts as replacement for
@@ -103,8 +103,8 @@ html_theme_options = {
 
 html_context = {
     'display_github': True,
-    'github_user': 'ros2',
-    'github_repo': 'ros2_documentation',
+    'github_user': 'EllaHayashiIndro',
+    'github_repo': 'Documentation',
     'github_version': 'rolling/source/',  # Will be overridden when building multiversion
 }
 
@@ -266,7 +266,7 @@ def smv_rewrite_configs(app, config):
     # to rewrite the various configuration items with the current version.
     if app.config.smv_current_version != '':
         app.config.html_baseurl = app.config.html_baseurl + '/' + app.config.smv_current_version
-        app.config.project = 'ROS 2 Documentation: ' + app.config.smv_current_version.title()
+        app.config.project = 'IndroRobotics Documentation: ' + app.config.smv_current_version.title()
 
         app.config.html_logo = 'source/Releases/' + app.config.smv_current_version + '-small.png'
 

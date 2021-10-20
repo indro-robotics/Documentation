@@ -1,9 +1,9 @@
-.. _ROSGuide:
+.. _InstallationGuide:
 .. _RollingInstall:
 
 .. toctree::
+   :maxdepth: 2
    :hidden:
-   :glob:
 
    ROS/Example
 
