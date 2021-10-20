@@ -1,0 +1,33 @@
+.. _InstallationGuide:
+.. _RollingInstall:
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   ROS/Example
+
+
+**About ROS**
+===============
+
+the Robot Operating System (ROS) is a software built for robot applications. Built in 2007, ROS goal is to provide a standard for robotic applications that developers can use for any robot. The software makes it easy to manage the many different components of a robot, including sensors, camera, motion planing, driver, joystick, and helps them communicate between eachother. Ros also provides the developer with many premade libraries that make future projects far quicker and easier.
+
+
+*Installation*
+------------------
+We will be using Ubuntu 20.04 / ROS Noetic / Python 3. For information on how to set up Ubuntu environment and python 3 information, visit Prerequisites page.
+
+Download commands are on the `ROS instalation page <http://wiki.ros.org/noetic/Installation/Ubuntu>`_
+
+The total download process may take some time
+
+
+
+*Core Concepts*
+------------------
+
+
+
+
+

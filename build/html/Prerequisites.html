@@ -4,13 +4,13 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Robot Documentation &mdash; Indro Robotics Documentation  documentation</title>
+  <title>Prerequisites &mdash; Indro Robotics Documentation  documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
       <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-    <link rel="canonical" href="https://docs.ros.org/en/index.html" />
+    <link rel="canonical" href="https://docs.ros.org/en/Prerequisites.html" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -24,7 +24,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Prerequisites" href="Prerequisites.html" /> 
+    <link rel="next" title="About ROS" href="ROS.html" />
+    <link rel="prev" title="Robot Documentation" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -32,7 +33,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="#" class="icon icon-home"> Indro Robotics Documentation
+            <a href="index.html" class="icon icon-home"> Indro Robotics Documentation
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -42,8 +43,8 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="Prerequisites.html"><strong>Prerequisites</strong></a></li>
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>Prerequisites</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="ROS/Example.html">Example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ROS.html"><strong>About ROS</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="Gazebo.html"><strong>About Gazebo</strong></a></li>
@@ -55,17 +56,17 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">Indro Robotics Documentation</a>
+          <a href="index.html">Indro Robotics Documentation</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
-      <li>Robot Documentation</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Prerequisites</strong></li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/EllaHayashiIndro/Documentation/blob/rolling/source/index.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/EllaHayashiIndro/Documentation/blob/rolling/source/Prerequisites.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -73,16 +74,44 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="robot-documentation">
-<h1>Robot Documentation<a class="headerlink" href="#robot-documentation" title="Permalink to this headline"></a></h1>
-<div class="toctree-wrapper compound">
-</div>
-<section id="where-to-start">
-<h2>Where to start<a class="headerlink" href="#where-to-start" title="Permalink to this headline"></a></h2>
-<p>start with pre requisites for environment setup and basic python linix instructions</p>
+  <section id="prerequisites">
+<span id="prerequisites-guide"></span><h1><strong>Prerequisites</strong><a class="headerlink" href="#prerequisites" title="Permalink to this headline"></a></h1>
+<p>In order to successfully compleat the robotics tutorials and examples, you need the proper environment for the software, along with basic linix and python skills.</p>
+<section id="environment">
+<h2><em>Environment</em><a class="headerlink" href="#environment" title="Permalink to this headline"></a></h2>
+<p>ROS Noetic requirs an Ubuntu 20.04. An easy way to do this is to create a virtual machine</p>
+<dl class="simple">
+<dt>To create an Ubuntu Virtual Machine, first download:</dt><dd><ul class="simple">
+<li><p><a class="reference external" href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a></p></li>
+<li><p><a class="reference external" href="https://ubuntu.com/download/desktop">Ubuntu Desktop</a></p></li>
+</ul>
+</dd>
+<dt>Then create a new virtual machine in virtualbox with</dt><dd><ul class="simple">
+<li><p>2GB-8GB of memory.</p></li>
+<li><p>A new virtual hard disk</p></li>
+<li><p>VDI</p></li>
+<li><p>Dynamically allocated</p></li>
+<li><p>25GB-50GB</p></li>
+</ul>
+</dd>
+</dl>
+<p>In your new VM instance, navigate to settings/system/processor. Change the CPU amount from 1 CPU to 2-4</p>
+<p>Then Navigate to settings/Network and change from NAT to Bridgeed Adapter to set up internet</p>
+<p>Finally start your VM, and Add the disk image ubuntu desktop downloaded previously.</p>
 </section>
-<section id="about">
-<h2>About<a class="headerlink" href="#about" title="Permalink to this headline"></a></h2>
+<section id="linux-basics">
+<h2><em>Linux basics</em><a class="headerlink" href="#linux-basics" title="Permalink to this headline"></a></h2>
+<p>Navigating the Linux terminal is an essential requirment when creating documents for ROS and Gazebo.</p>
+<dl class="simple">
+<dt>Basic commands include:</dt><dd><ul class="simple">
+<li><p>ls</p></li>
+<li><p>cd</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="python-basics">
+<h2><em>Python basics</em><a class="headerlink" href="#python-basics" title="Permalink to this headline"></a></h2>
 </section>
 </section>
 
@@ -90,7 +119,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Prerequisites.html" class="btn btn-neutral float-right" title="Prerequisites" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Robot Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ROS.html" class="btn btn-neutral float-right" title="About ROS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
