@@ -4,13 +4,13 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; ROS 2 documentation  documentation</title>
+  <title>Prerequisites &mdash; ROS 2 documentation  documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
       <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-    <link rel="canonical" href="https://docs.ros.org/en/index.html" />
+    <link rel="canonical" href="https://docs.ros.org/en/Prerequisites.html" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -31,7 +31,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="#" class="icon icon-home"> ROS 2 documentation
+            <a href="index.html" class="icon icon-home"> ROS 2 documentation
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -42,7 +42,13 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
-              <div class="local-toc"><ul class="simple">
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#"><strong>Prerequisites</strong></a><ul>
+<li><a class="reference internal" href="#environment"><em>Environment</em></a></li>
+<li><a class="reference internal" href="#linux-basics"><em>Linux basics</em></a></li>
+<li><a class="reference internal" href="#python-basics"><em>Python basics</em></a></li>
+</ul>
+</li>
 </ul>
 </div>
         </div>
@@ -51,17 +57,17 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">ROS 2 documentation</a>
+          <a href="index.html">ROS 2 documentation</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
-      <li>&lt;no title&gt;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Prerequisites</strong></li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/ros2/ros2_documentation/blob/rolling/source/index.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/ros2/ros2_documentation/blob/rolling/source/Prerequisites.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -69,7 +75,47 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
+  <section id="prerequisites">
+<span id="prerequisites-guide"></span><h1><strong>Prerequisites</strong><a class="headerlink" href="#prerequisites" title="Permalink to this headline"></a></h1>
+<p>In order to successfully compleat the robotics tutorials and examples, you need the proper environment for the software, along with basic linix and python skills.</p>
+<section id="environment">
+<h2><em>Environment</em><a class="headerlink" href="#environment" title="Permalink to this headline"></a></h2>
+<p>ROS Noetic requirs an Ubuntu 20.04. An easy way to do this is to create a virtual machine</p>
+<dl class="simple">
+<dt>To create an Ubuntu Virtual Machine, first download:</dt><dd><ul class="simple">
+<li><p><a class="reference external" href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a></p></li>
+<li><p><a class="reference external" href="https://ubuntu.com/download/desktop">Ubuntu Desktop</a></p></li>
+</ul>
+</dd>
+<dt>Then create a new virtual machine in virtualbox with</dt><dd><ul class="simple">
+<li><p>2GB-8GB of memory.</p></li>
+<li><p>A new virtual hard disk</p></li>
+<li><p>VDI</p></li>
+<li><p>Dynamically allocated</p></li>
+<li><p>25GB-50GB</p></li>
+</ul>
+</dd>
+</dl>
+<p>In your new VM instance, navigate to settings/system/processor. Change the CPU amount from 1 CPU to 2-4</p>
+<p>Then Navigate to settings/Network and change from NAT to Bridgeed Adapter to set up internet</p>
+<p>Finally start your VM, and Add the disk image ubuntu desktop downloaded previously.</p>
+</section>
+<section id="linux-basics">
+<h2><em>Linux basics</em><a class="headerlink" href="#linux-basics" title="Permalink to this headline"></a></h2>
+<p>Navigating the Linux terminal is an essential requirment when creating documents for ROS and Gazebo.</p>
+<dl class="simple">
+<dt>Basic commands include:</dt><dd><ul class="simple">
+<li><p>ls</p></li>
+<li><p>cd</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="python-basics">
+<h2><em>Python basics</em><a class="headerlink" href="#python-basics" title="Permalink to this headline"></a></h2>
+</section>
+</section>
+
 
            </div>
           </div>
