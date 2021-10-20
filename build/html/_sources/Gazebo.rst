@@ -1,5 +1,7 @@
 .. _GazeboGuide:
-.. _RollingInstall:
+
+**About Gazebo**
+=================
 
 .. toctree::
    :hidden:
@@ -8,8 +10,7 @@
    Gazebo/index
 
 
-**About Gazebo**
-=================
+
 
 
 *Installation*
