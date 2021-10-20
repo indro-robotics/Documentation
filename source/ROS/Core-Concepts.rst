@@ -3,5 +3,5 @@
 
 
 
-Example
+Core Concepts
 ==============
