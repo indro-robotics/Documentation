@@ -91,11 +91,51 @@
 </div>
 <section id="installation">
 <h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline"></a></h1>
-<section id="id1">
-<h2><em>Installation</em><a class="headerlink" href="#id1" title="Permalink to this headline"></a></h2>
-<p>We will be using Ubuntu 20.04 / ROS Noetic / Python 3. For information on how to set up Ubuntu environment and python 3 information, visit Prerequisites page.</p>
-<p>Download commands are on the <a class="reference external" href="http://wiki.ros.org/noetic/Installation/Ubuntu">ROS instalation page</a></p>
-<p>The total download process may take some time</p>
+<p>This page explains how to install ROS on Ubuntu Linux.</p>
+<section id="system-requirments">
+<h2><em>System Requirments</em><a class="headerlink" href="#system-requirments" title="Permalink to this headline"></a></h2>
+<p>We will be using Ubuntu 20.04 / ROS Noetic / Python 3. For information on how to set up Ubuntu environment, and informatin on Linux Terminal/python 3, visit Prerequisites page.</p>
+</section>
+<section id="download-ros">
+<h2><em>Download ROS</em><a class="headerlink" href="#download-ros" title="Permalink to this headline"></a></h2>
+<p>Open up a new terminal and execute the following commands in order.</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">Step 1:</span><a class="headerlink" href="#id1" title="Permalink to this code"></a></div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>sudo sh -c &#39;echo &quot;deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main&quot; &gt; /etc/apt/sources.list.d/ros-latest.list&#39;
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">Step 2:</span><a class="headerlink" href="#id2" title="Permalink to this code"></a></div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>sudo apt install curl
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">Step 3:</span><a class="headerlink" href="#id3" title="Permalink to this code"></a></div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id4">
+<div class="code-block-caption"><span class="caption-text">Step 4:</span><a class="headerlink" href="#id4" title="Permalink to this code"></a></div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>sudo apt update
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id5">
+<div class="code-block-caption"><span class="caption-text">Step 5:</span><a class="headerlink" href="#id5" title="Permalink to this code"></a></div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>sudo apt install ros-noetic-desktop-full
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id6">
+<div class="code-block-caption"><span class="caption-text">Step 6:</span><a class="headerlink" href="#id6" title="Permalink to this code"></a></div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>echo &quot;source /opt/ros/noetic/setup.bash&quot; &gt;&gt; ~/.bashrc
+</pre></div>
+</div>
+</div>
+<p>You should have ROS downloaded on your device now! Navigate to the <a class="reference external" href="http://wiki.ros.org/noetic/Installation/Ubuntu">ROS instalation page</a> for any further information on the installation process.</p>
 </section>
 </section>
 
