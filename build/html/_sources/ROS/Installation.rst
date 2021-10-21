@@ -52,6 +52,18 @@ Open up a new terminal and execute the following commands in order.
 You should have ROS downloaded on your device now! Navigate to the `ROS instalation page <http://wiki.ros.org/noetic/Installation/Ubuntu>`_ for any further information on the installation process.
 
 
+*Test Download*
+---------------------
+
+To test your newly downloaded ROS, start a ROS master by simply opening a new terminal and execute 'roscore'. You should see the following to know it is a success.
+
+.. image:: roscore.png
+	:width: 700
+	:alt: Alternative test
+
+
+
+
 
 
 

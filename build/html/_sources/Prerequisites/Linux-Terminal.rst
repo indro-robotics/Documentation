@@ -13,4 +13,12 @@ Navigating the Linux terminal is an essential requirment when creating documents
 Basic commands include:
     * ls
     * cd
+    * cd ..
+    * cd ~
+    * pwd
+    
+    
+    
 
+sudo apt update
+sudo apt install git
