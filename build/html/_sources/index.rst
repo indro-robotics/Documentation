@@ -20,6 +20,11 @@ Robot Documentation
    AgileX
    
 
+.. image:: robot.jpeg
+	:width: 600
+	:alt: Alternative test
+
+
 
 Where to start
 -----------------
