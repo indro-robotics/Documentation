@@ -1,15 +1,28 @@
 Robot Documentation
 ======================
 
+
 .. toctree::
-   :titlesonly:
-   :maxdepth: 1
+   :caption: Software
+   :maxdepth: 2
    :hidden:
 
    Prerequisites
    ROS
    Gazebo
 
+
+.. toctree::
+   :caption: Robots
+   :maxdepth: 2
+   :hidden:
+   
+   AgileX
+   
+
+.. image:: robot.jpeg
+	:width: 600
+	:alt: Alternative test
 
 
 
@@ -21,5 +34,12 @@ start with pre requisites for environment setup and basic python linix instructi
 
 About
 --------
+
+
+
+
+
+
+
 
 
