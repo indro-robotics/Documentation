@@ -1,9 +1,10 @@
 Robot Documentation
 ======================
 
+
 .. toctree::
-   :titlesonly:
-   :maxdepth: 1
+   :caption: Software
+   :maxdepth: 2
    :hidden:
 
    Prerequisites
@@ -11,6 +12,13 @@ Robot Documentation
    Gazebo
 
 
+.. toctree::
+   :caption: Robots
+   :maxdepth: 2
+   :hidden:
+   
+   AgileX
+   
 
 
 Where to start
@@ -21,5 +29,12 @@ start with pre requisites for environment setup and basic python linix instructi
 
 About
 --------
+
+
+
+
+
+
+
 
 

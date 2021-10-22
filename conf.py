@@ -21,6 +21,8 @@ import itertools
 import os
 import sys
 import time
+import sphinx_rtd_theme
+
 
 from docutils.parsers.rst import Directive
 
@@ -75,7 +77,7 @@ pygments_style = 'sphinx'
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
-extensions = ['sphinx.ext.intersphinx', 'sphinx_tabs.tabs', 'sphinx_multiversion', 'sphinx_rtd_theme', 'sphinx.ext.ifconfig','sphinx_copybutton']
+extensions = ['sphinx.ext.intersphinx', 'sphinx_tabs.tabs', 'sphinx_multiversion', 'sphinx_rtd_theme', 'sphinx.ext.ifconfig','sphinx_copybutton','sphinx_rtd_theme']
 
 # Intersphinx mapping
 
@@ -99,13 +101,29 @@ html_theme_options = {
     'collapse_navigation': False,
     'sticky_navigation': True,
     'navigation_depth': -1,
+    'style_nav_header_background': '#FFFFFF',
+    'logo_only': True,
 }
+
+html_static_path = ['_static']
+
+html_css_files = [
+	'css/custom.css',
+]
+
+#subheadlinecolor = "#ff9933"
+
+
+#FCF7F0
+
+html_logo = 'indroLogo.png'
 
 html_context = {
     'display_github': True,
     'github_user': 'EllaHayashiIndro',
     'github_repo': 'Documentation',
     'github_version': 'rolling/source/',  # Will be overridden when building multiversion
+    
 }
 
 templates_path = [
@@ -120,7 +138,7 @@ smv_branch_whitelist = r'^(rolling|galactic|foxy|eloquent|dashing|crystal)$'
 smv_released_pattern = r'^refs/(heads|remotes/[^/]+)/(galactic|foxy|eloquent|dashing|crystal).*$'
 smv_remote_whitelist = r'^(origin)$'
 smv_latest_version = 'galactic'
-smv_eol_versions = ['crystal', 'dashing', 'eloquent']
+"""smv_eol_versions = ['crystal', 'dashing', 'eloquent']
 
 distro_full_names = {
     'crystal': 'Crystal Clemmys',
@@ -129,7 +147,7 @@ distro_full_names = {
     'foxy': 'Foxy Fitzroy',
     'galactic': 'Galactic Geochelone',
     'rolling': 'Rolling Ridley',
-}
+}"""
 
 # These default values will be overridden when building multiversion
 macros = {
@@ -139,7 +157,6 @@ macros = {
     'REPOS_FILE_BRANCH': 'master',
 }
 
-html_favicon = 'favicon.ico'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

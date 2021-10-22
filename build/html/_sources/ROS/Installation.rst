@@ -61,7 +61,7 @@ To test your newly downloaded ROS, start a ROS master by simply opening a new te
 	:width: 700
 	:alt: Alternative test
 
-
+To exit the roscore master, press Ctrl+C to kill the process.
 
 
 

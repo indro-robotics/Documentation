@@ -14,11 +14,19 @@ Basic commands include:
     * ls
     * cd
     * cd ..
-    * cd ~
+    * cd ~ (For home directory)
     * pwd
+    * mkdir directory_name (to create a new directory called directory_name)
     
     
     
+ 
 
 sudo apt update
 sudo apt install git
+
+
+
+
+
+

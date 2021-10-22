@@ -8,7 +8,7 @@
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
       <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
-    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
     <link rel="canonical" href="https://docs.ros.org/en/ROS/Example.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
@@ -31,8 +31,9 @@
   <div class="wy-grid-for-nav">
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> Indro Robotics Documentation
+        <div class="wy-side-nav-search"  style="background: #FFFFFF" >
+            <a href="../index.html">
+            <img src="../_static/indroLogo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -42,17 +43,42 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul class="current">
+              <p class="caption" role="heading"><span class="caption-text">Software</span></p>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Prerequisites.html"><strong>Prerequisites</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html">Ubuntu Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html">Terminal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html">Terminal</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html#linux-basics"><em>Linux basics</em></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Python.html">Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Python.html#install"><em>Install</em></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../ROS.html"><strong>ROS</strong></a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="Installation.html">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Core-Concepts.html">Core Concepts</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Installation.html#system-requirments"><em>System Requirments</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Installation.html#download-ros"><em>Download ROS</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Installation.html#test-download"><em>Test Download</em></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Core-Concepts.html">Core Concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Core-Concepts.html#nodes"><em>Nodes</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Core-Concepts.html#topics"><em>Topics</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Core-Concepts.html#publisher-and-subscriber"><em>Publisher and Subscriber</em></a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-a-catkin-workspace"><em>Create a Catkin Workspace</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-a-ros-package"><em>Create a ROS package</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ros-node-in-python"><em>ROS Node in Python</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#debugging"><em>Debugging</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#visualize-ros-graph"><em>Visualize ROS Graph</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#turtlesim-example"><em>Turtlesim Example</em></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Gazebo.html"><strong>Gazebo</strong></a><ul>
@@ -60,12 +86,16 @@
 </ul>
 </li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Robots</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../AgileX.html"><strong>AgileX</strong></a></li>
+</ul>
 
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #FFFFFF" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Indro Robotics Documentation</a>
       </nav>
@@ -90,6 +120,32 @@
 </div>
 <div class="section" id="example">
 <h1>Example<a class="headerlink" href="#example" title="Permalink to this headline"></a></h1>
+<p>We will be creating our first ROS program in this example. To do this, we will first create a workspace to create our python code in. Then we will handle ROS packages and ROS nodes to develop a working ROS program.</p>
+<div class="section" id="create-a-catkin-workspace">
+<h2><em>Create a Catkin Workspace</em><a class="headerlink" href="#create-a-catkin-workspace" title="Permalink to this headline"></a></h2>
+<p>Catkin is the official build system for ROS. You will use it everytime you need to build your ROS application.</p>
+<p>To create a Catkin workspace please make sure you are in your home directory, or the directory that you choose to create your ROS program. Create a new directory (We recomend naming the directory catkin_ws). You also want to create a src folder inside you’re newly created catkin folder.</p>
+<p>Inside the catkin directory, execute the command ‘catkin_make’. This will build you a new ROS work environment.</p>
+<p>Now if you list all inside the catkin directory (using ls), you should see the created ‘src’ folder, a ‘build’ folder, and a ‘devel’ folder</p>
+<a class="reference internal image-reference" href="../_images/isCatkin.png"><img alt="Directory Layout" src="../_images/isCatkin.png" style="width: 700px;" /></a>
+</div>
+<div class="section" id="create-a-ros-package">
+<h2><em>Create a ROS package</em><a class="headerlink" href="#create-a-ros-package" title="Permalink to this headline"></a></h2>
+</div>
+<div class="section" id="ros-node-in-python">
+<h2><em>ROS Node in Python</em><a class="headerlink" href="#ros-node-in-python" title="Permalink to this headline"></a></h2>
+</div>
+<div class="section" id="debugging">
+<h2><em>Debugging</em><a class="headerlink" href="#debugging" title="Permalink to this headline"></a></h2>
+<p>debug nodes:</p>
+<p>debug topics:</p>
+</div>
+<div class="section" id="visualize-ros-graph">
+<h2><em>Visualize ROS Graph</em><a class="headerlink" href="#visualize-ros-graph" title="Permalink to this headline"></a></h2>
+</div>
+<div class="section" id="turtlesim-example">
+<h2><em>Turtlesim Example</em><a class="headerlink" href="#turtlesim-example" title="Permalink to this headline"></a></h2>
+</div>
 </div>
 
 
