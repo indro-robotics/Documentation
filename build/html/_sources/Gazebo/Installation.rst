@@ -1,9 +1,0 @@
-.. toctree::
-   :hidden:
-
-
-
-Installation
-==============
-
-

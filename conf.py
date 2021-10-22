@@ -111,10 +111,6 @@ html_css_files = [
 	'css/custom.css',
 ]
 
-#subheadlinecolor = "#ff9933"
-
-
-#FCF7F0
 
 html_logo = 'indroLogo.png'
 

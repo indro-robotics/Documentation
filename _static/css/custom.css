@@ -3,3 +3,14 @@
   color: #fc7303;
   font-size: large
 }
+
+.rst-footer-buttons > .btn > span.fa {
+  color: #fc7303
+}
+
+.navigation > .wy-breadcrumbs {
+  color: #fc7303
+}
+
+
+
