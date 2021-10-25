@@ -10,7 +10,7 @@ We will be creating our first ROS program in this example. To do this, we will f
 
 
 *Create a Catkin Workspace*
-------------------------------
+--------------------------------
 
 Catkin is the official build system for ROS. You will use it everytime you need to build your ROS application.
 
@@ -26,6 +26,13 @@ Now if you list all inside the catkin directory (using ls), you should see the c
 	:alt: Directory Layout
 
 
+The last step to set up this catkin directory is to enter into the devel folder (cd devel). Once inside the devel folder you can see that there is a setup.bash file. In order to set up this working directory you type the command "source setup.bash".
+
+.. image:: setup.png
+	:width: 700
+	:alt: setup.bash
+	
+Alternatively, instead of manually doing this step for every new environment, we can type this command into the bashrc script. We have also showed this step in the 'ROS Installation' page for reference.
 
 
 *Create a ROS package*
