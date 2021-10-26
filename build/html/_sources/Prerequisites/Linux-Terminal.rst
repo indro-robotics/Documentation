@@ -6,8 +6,8 @@
 Terminal
 ==============
 
-*Linux basics*
----------------
+**LINUX BASICS**
+
 Navigating the Linux terminal is an essential requirment when creating documents for ROS and Gazebo.
 
 
@@ -32,6 +32,8 @@ Basic knowledge of linux terminal will help the user navigate through the rest o
      - print working directory
    * - mkdir
      - make directory (e.g. mkdir newDirectory)
+   * - chmod +x python_file.py
+     - make a file executable
 
 
 There are basic installs following starting linux.

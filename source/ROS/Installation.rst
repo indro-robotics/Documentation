@@ -1,5 +1,6 @@
 .. toctree::
    :hidden:
+   :titlesonly:
 
 
 Installation
@@ -7,13 +8,13 @@ Installation
 This page explains how to install ROS on Ubuntu Linux.
 
 
-*System Requirments*
----------------------
+**SYSTEM REQUIRMENTS**
+
 We will be using Ubuntu 20.04 / ROS Noetic / Python 3. For information on how to set up Ubuntu environment, and informatin on Linux Terminal/python 3, visit Prerequisites page.
 
 
-*Download ROS*
----------------------
+
+**DOWNLOAD ROS**
 
 Open up a new terminal and execute the following commands in order.
 
@@ -52,8 +53,8 @@ Open up a new terminal and execute the following commands in order.
 You should have ROS downloaded on your device now! Navigate to the `ROS instalation page <http://wiki.ros.org/noetic/Installation/Ubuntu>`_ for any further information on the installation process.
 
 
-*Test Download*
----------------------
+**TEST DOWNLOAD**
+
 
 To test your newly downloaded ROS, start a ROS master by simply opening a new terminal and execute 'roscore'. You should see the following to know it is a success.
 

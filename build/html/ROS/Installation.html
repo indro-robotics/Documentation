@@ -47,38 +47,27 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Prerequisites.html"><strong>Prerequisites</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html">Ubuntu Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html">Terminal</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html#linux-basics"><em>Linux basics</em></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Python.html">Python</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Python.html#install"><em>Install</em></a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html">Terminal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Python.html">Python</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../ROS.html"><strong>ROS</strong></a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Installation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#system-requirments"><em>System Requirments</em></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#download-ros"><em>Download ROS</em></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#test-download"><em>Test Download</em></a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Core-Concepts.html">Core Concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Tutorials.html"><strong>ROS Elements</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Tutorials/Create_Catkin.html">Catkin Workspace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Tutorials/Create_Package.html">ROS Package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Tutorials/Create_Python_Node.html">ROS Node</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Tutorials/Publisher.html">Publisher</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Tutorials/Subscriber.html">Subscriber</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Tutorials/Service_Server.html">Service Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Tutorials/Client_server.html">Service Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Tutorials/Msg_Srv.html">Msg and Srv</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Tutorials/Launch.html">Launch Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Tutorials/Command_Line_Tools.html">DEBUG commands</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="Core-Concepts.html">Core Concepts</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Core-Concepts.html#nodes"><em>Nodes</em></a></li>
-<li class="toctree-l3"><a class="reference internal" href="Core-Concepts.html#topics"><em>Topics</em></a></li>
-<li class="toctree-l3"><a class="reference internal" href="Core-Concepts.html#publisher-and-subscriber"><em>Publisher and Subscriber</em></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Example.html">Example</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Example.html#create-a-catkin-workspace"><em>Create a Catkin Workspace</em></a></li>
-<li class="toctree-l3"><a class="reference internal" href="Example.html#create-a-ros-package"><em>Create a ROS package</em></a></li>
-<li class="toctree-l3"><a class="reference internal" href="Example.html#ros-node-in-python"><em>ROS Node in Python</em></a></li>
-<li class="toctree-l3"><a class="reference internal" href="Example.html#debugging"><em>Debugging</em></a></li>
-<li class="toctree-l3"><a class="reference internal" href="Example.html#visualize-ros-graph"><em>Visualize ROS Graph</em></a></li>
-<li class="toctree-l3"><a class="reference internal" href="Example.html#turtlesim-example"><em>Turtlesim Example</em></a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="Example.html">Tutorial/Demonstration</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Gazebo.html"><strong>Gazebo</strong></a><ul>
@@ -121,12 +110,9 @@
 <div class="section" id="installation">
 <h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline"></a></h1>
 <p>This page explains how to install ROS on Ubuntu Linux.</p>
-<div class="section" id="system-requirments">
-<h2><em>System Requirments</em><a class="headerlink" href="#system-requirments" title="Permalink to this headline"></a></h2>
+<p><strong>SYSTEM REQUIRMENTS</strong></p>
 <p>We will be using Ubuntu 20.04 / ROS Noetic / Python 3. For information on how to set up Ubuntu environment, and informatin on Linux Terminal/python 3, visit Prerequisites page.</p>
-</div>
-<div class="section" id="download-ros">
-<h2><em>Download ROS</em><a class="headerlink" href="#download-ros" title="Permalink to this headline"></a></h2>
+<p><strong>DOWNLOAD ROS</strong></p>
 <p>Open up a new terminal and execute the following commands in order.</p>
 <div class="literal-block-wrapper docutils container" id="id1">
 <div class="code-block-caption"><span class="caption-text">Step 1:</span><a class="headerlink" href="#id1" title="Permalink to this code"></a></div>
@@ -165,13 +151,10 @@
 </div>
 </div>
 <p>You should have ROS downloaded on your device now! Navigate to the <a class="reference external" href="http://wiki.ros.org/noetic/Installation/Ubuntu">ROS instalation page</a> for any further information on the installation process.</p>
-</div>
-<div class="section" id="test-download">
-<h2><em>Test Download</em><a class="headerlink" href="#test-download" title="Permalink to this headline"></a></h2>
+<p><strong>TEST DOWNLOAD</strong></p>
 <p>To test your newly downloaded ROS, start a ROS master by simply opening a new terminal and execute ‘roscore’. You should see the following to know it is a success.</p>
 <a class="reference internal image-reference" href="../_images/roscore.png"><img alt="Alternative test" src="../_images/roscore.png" style="width: 700px;" /></a>
 <p>To exit the roscore master, press Ctrl+C to kill the process.</p>
-</div>
 </div>
 
 

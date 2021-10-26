@@ -8,8 +8,8 @@ Python
 
 ROS can use both Python and C++, but for this course we will use Python. 
 
-*Install*
-----------
+**INSTALL**
+
 
 Instal Python3 with the following command in the Terminal
 

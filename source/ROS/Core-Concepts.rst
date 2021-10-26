@@ -7,17 +7,19 @@ Core Concepts
 ==============
 
 
-*Nodes*
----------------
 
 
-*Topics*
----------------
+**NODES**
 
 
 
-*Publisher and Subscriber*
-------------------------------
+**TOPICS**
+
+
+
+
+**PUBLISHER AND SUBSCRIBER**
+
 
 
 

@@ -6,10 +6,12 @@
 
 .. toctree::
    :hidden:
+   :titlesonly:
    :glob:
 
    ROS/Installation
    ROS/Core-Concepts
+   ROS/Tutorials
    ROS/Example
 
 
