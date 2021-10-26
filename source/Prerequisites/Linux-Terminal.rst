@@ -8,10 +8,7 @@ Terminal
 
 **LINUX BASICS**
 
-Navigating the Linux terminal is an essential requirment when creating documents for ROS and Gazebo.
-
-
-Basic knowledge of linux terminal will help the user navigate through the rest of the tutorials. 
+Navigating the Linux terminal is an essential requirment when using software such as ROS and Gazebo. Since most development is done using the terminal, it is important to know and understand the following basic commands. 
 
 
 .. list-table:: Basic Linux Commands
@@ -36,10 +33,11 @@ Basic knowledge of linux terminal will help the user navigate through the rest o
      - make a file executable
 
 
-There are basic installs following starting linux.
+**INSTALLS**
 
+There are also essential installations/updates that anyone following the guide would want to consider installing.
 
-.. list-table:: Basic Linux Installs
+.. list-table:: Install/update the following
    :widths: 25 75
    :header-rows: 1
 
@@ -52,9 +50,12 @@ There are basic installs following starting linux.
    * - sudo apt install vim
      - vim is an in terminal text editor
      
-Vim is an in terminal text editor that is very convenient but a litle tricky to navigate if you don't know the short hands. Vim doesn't use the mouse and is stricly navigated through the keyboard
+     
+**VIM**
 
-.. list-table:: Vim
+Vim is another consideration for people working in the terminal. Although less user friendly then other text editors, it can be a convenient tool other than working with an editor. For more information on Vim we strongly recomend looking at the online documentation. Below are a list of some (but not all) of the most important commands.
+
+.. list-table:: Vim Commands
    :widths: 25 75
    :header-rows: 1
 
@@ -62,7 +63,7 @@ Vim is an in terminal text editor that is very convenient but a litle tricky to 
      - To move up and down in the script, use arrow keys
    * - i
      - to insert text
-   * - esp
+   * - esc
      - often used to escape from insert mode (i)
    * - :q! 
      - quit without saving
