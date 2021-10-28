@@ -14,9 +14,33 @@ Packages will allow you to separate your code into reusable blocks. A package is
 
 **CREATE A ROS PACKAGE**
 
-Navigate to the src folder of the catkin workspace, and to create a package, type catkin_create_pkg 'name_of_package' roscpp rospy std_msgs.
+1. Enter src folder inside catkin workspace
 
-Always catkin_make after every created package!
+.. code-block:: text
+
+	cd src
+
+2. Create a new package (e.g. package name is new_Package)
+
+.. code-block:: text
+
+	catkin_create_pkg new_Package roscpp rospy std_msgs
+
+
+3. Navigate out of src folder
+
+.. code-block:: text
+
+	cd ..
+	
+3. You must always catkin_make after creating a new package
+
+.. code-block:: text
+
+	catkin_make
+
+
+*Terminal output of creating a new package*
 
 .. image:: create_catkin.png
 	:width: 700

@@ -38,6 +38,8 @@ rosservice call /reset ("TAB for info")
 #rosservice call /turtle1/teleport_relative "linear:1.0 angular: 0.0"
 
 
+
+
 go ahead and play and debut!!!
 	
 

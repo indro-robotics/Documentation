@@ -72,12 +72,17 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../Gazebo.html"><strong>Gazebo</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../Gazebo/Installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Gazebo/Simulation.html">Simulation</a></li>
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Robots</span></p>
+<p class="caption" role="heading"><span class="caption-text">AgileX</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../AgileX.html"><strong>AgileX</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Requirments.html"><strong>Requirments</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Hunter.html"><strong>Hunter</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Hunter/Setup.html">Setup</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -113,8 +118,31 @@
 <p><strong>WHAT IS A PACKAGE</strong></p>
 <p>Packages will allow you to separate your code into reusable blocks. A package is an independant unit. For example, for one Robot, you can have multiple different packages, each handling a different application for the robot. One application might be handling the Robot camera, while the other might be handling the motion of the Robot.</p>
 <p><strong>CREATE A ROS PACKAGE</strong></p>
-<p>Navigate to the src folder of the catkin workspace, and to create a package, type catkin_create_pkg ‘name_of_package’ roscpp rospy std_msgs.</p>
-<p>Always catkin_make after every created package!</p>
+<ol class="arabic simple">
+<li><p>Enter src folder inside catkin workspace</p></li>
+</ol>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>cd src
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Create a new package (e.g. package name is new_Package)</p></li>
+</ol>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>catkin_create_pkg new_Package roscpp rospy std_msgs
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Navigate out of src folder</p></li>
+</ol>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>cd ..
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>You must always catkin_make after creating a new package</p></li>
+</ol>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>catkin_make
+</pre></div>
+</div>
+<p><em>Terminal output of creating a new package</em></p>
 <a class="reference internal image-reference" href="../../_images/create_catkin.png"><img alt="Alternative test" src="../../_images/create_catkin.png" style="width: 700px;" /></a>
 </div>
 

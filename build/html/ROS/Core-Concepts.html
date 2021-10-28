@@ -75,9 +75,13 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Robots</span></p>
+<p class="caption" role="heading"><span class="caption-text">AgileX</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../AgileX.html"><strong>AgileX</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Requirments.html"><strong>Requirments</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Hunter.html"><strong>Hunter</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Hunter/Setup.html">Setup</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -109,9 +113,12 @@
 </div>
 <div class="section" id="core-concepts">
 <h1>Core Concepts<a class="headerlink" href="#core-concepts" title="Permalink to this headline"></a></h1>
-<p><strong>NODES</strong></p>
-<p><strong>TOPICS</strong></p>
-<p><strong>PUBLISHER AND SUBSCRIBER</strong></p>
+<p>On this page we will be discussing the high levle view of ROS, and not the technical details. It is essential to understand how the components work together to create the product you want.</p>
+<p>ROS works with independent nodes acting on their own and communicating with eachother. Nodes can handle any specific task that a robot might need, from motion control components to camera handling. There are also different types of node factions, such as publisher, subscriber, client, and server, which are specifically designed to act a certain way with other nodes.</p>
+<p>We also have a ROS Master, the most important component of the system. The ROS master is what allows the nodes to communicate with eachother. Upon starting the ROS master, the active nodes must register first with the master. The master will then direct which nodes to talk to which other nodes. This is why when starting the system, ROS developers must always have a ROS master active and running.</p>
+<p>Below is a conceptual example of what nodes connected to a ROS master might look like.</p>
+<a class="reference internal image-reference" href="../_images/ROS_Diagram.png"><img alt="Directory Layout" src="../_images/ROS_Diagram.png" style="width: 700px;" /></a>
+<p>In the diagram, the circular cells are all nodes connected and registered to the ROS master. They communicate to eachother in variouse ways, by either sending data directly to a node, or by subscribing and publishing to topics. The simple example diagram is a layout of a robot that moves with a motion plan based on an image that a camera gathers.</p>
 </div>
 
 

@@ -75,9 +75,13 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Robots</span></p>
+<p class="caption" role="heading"><span class="caption-text">AgileX</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../AgileX.html"><strong>AgileX</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Requirments.html"><strong>Requirments</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Hunter.html"><strong>Hunter</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Hunter/Setup.html">Setup</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -113,13 +117,46 @@
 <p><strong>WHAT IS A CATKIN WORKSPACE</strong></p>
 <p>Catkin is the official build system for ROS. You will use it everytime you need to build your ROS application.</p>
 <p><strong>CREATE CATKIN WORKSPACE</strong></p>
-<p>To create a Catkin workspace please make sure you are in your home directory, or the directory that you choose to create your ROS program. Create a new directory (We recomend naming the directory catkin_ws). You also want to create a src folder inside you’re newly created catkin folder.</p>
-<p>Inside the catkin directory, execute the command ‘catkin_make’. This will build you a new ROS work environment.</p>
+<p>To create a Catkin workspace please make sure you are in your home directory, or the directory that you choose to create your ROS program.</p>
+<ol class="arabic simple">
+<li><p>Create a new catkin directory</p></li>
+</ol>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>mkdir catkin_ws
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Navigate inside catkin directory</p></li>
+</ol>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>cd catkin_ws
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Make a src folder</p></li>
+</ol>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>mkdir src
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Execute catkin_make command in src folder. This will build you a new ROS work environment.</p></li>
+</ol>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>catkin_make
+</pre></div>
+</div>
 <p>Now if you list all inside the catkin directory (using ls), you should see the created ‘src’ folder, a ‘build’ folder, and a ‘devel’ folder</p>
 <a class="reference internal image-reference" href="../../_images/isCatkin.png"><img alt="Directory Layout" src="../../_images/isCatkin.png" style="width: 700px;" /></a>
-<p>The last step to set up this catkin directory is to enter into the devel folder (cd devel). Once inside the devel folder you can see that there is a setup.bash file. In order to set up this working directory you type the command “source setup.bash”.</p>
-<a class="reference internal image-reference" href="../../_images/setup.png"><img alt="setup.bash" src="../../_images/setup.png" style="width: 700px;" /></a>
-<p>Alternatively, instead of manually doing this step for every new environment, we can type this command into the bashrc script. We have also showed this step in the ‘ROS Installation’ page for reference.</p>
+<ol class="arabic simple" start="5">
+<li><p>Go into devel folder</p></li>
+</ol>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>cd devel
+</pre></div>
+</div>
+<ol class="arabic simple" start="6">
+<li><p>Set up bash</p></li>
+</ol>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>source setup.bash
+</pre></div>
+</div>
+<p>That is all you need to create a new catkin workspace for ROS!</p>
 </div>
 
 
