@@ -3,20 +3,20 @@
    :titlesonly:
 
 
-Setup
-==============
+Scout Mini Setup
+====================
 
 1. Create a new directory for your workspace
 
 .. code-block:: text
 
-	mkdir hunter_ws
+	mkdir scout_mini_ws
 
-2. Enter hunter_ws folder
+2. Enter scout_mini_ws folder
 
 .. code-block:: text
 
-	cd hunter_ws
+	cd scout_mini_ws
 	
 3. Create a src folder
 
@@ -43,8 +43,7 @@ Setup
 	git clone https://github.com/agilexrobotics/ugv_gazebo_sim.git
 
 
-
-8. Enter hunter_ws folder
+8. Enter scout_mini_ws folder
 
 .. code-block:: text
 
@@ -70,25 +69,9 @@ Setup
 
 	catkin_make
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
+	
+	
+	
+	
 
