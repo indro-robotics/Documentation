@@ -62,7 +62,6 @@
 <li class="toctree-l3"><a class="reference internal" href="Subscriber.html">Subscriber</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Service Server</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Client_server.html">Service Client</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Msg_Srv.html">Msg and Srv</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Launch.html">Launch Files</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Command_Line_Tools.html">DEBUG commands</a></li>
 </ul>
@@ -142,7 +141,10 @@
 <p><strong>WHAT IS A ROS SERVER</strong></p>
 <p>A ROS service server holds the information for a requesting service client. It waits for a request on a specific service, and will spend back a response to the client. For example, if a client sends the server two numbers, a server can reply with the sum of those two numbers.</p>
 <p><strong>CREATE A ROS SERVER</strong></p>
-<a class="reference internal image-reference" href="../../_images/pythonServer.png"><img alt="Directory Layout" src="../../_images/pythonServer.png" style="width: 700px;" /></a>
+<p>Below is a template for Server code. Save this code in the scripts section of you’re catkin package. The server template shows a server that given two numbers from a client, will return the sum of those two numbers. the srv used is handle_add_together.</p>
+<a class="reference internal image-reference" href="../../_images/server.png"><img alt="Directory Layout" src="../../_images/server.png" style="width: 700px;" /></a>
+<p>Running this code, the output should look like the following:</p>
+<a class="reference internal image-reference" href="../../_images/server.gif"><img alt="Directory Layout" src="../../_images/server.gif" style="width: 700px;" /></a>
 </div>
 
 

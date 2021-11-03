@@ -24,7 +24,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="DEBUG commands" href="Command_Line_Tools.html" />
-    <link rel="prev" title="Msg and Srv" href="Msg_Srv.html" /> 
+    <link rel="prev" title="Service Client" href="Client_server.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -62,7 +62,6 @@
 <li class="toctree-l3"><a class="reference internal" href="Subscriber.html">Subscriber</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Service_Server.html">Service Server</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Client_server.html">Service Client</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Msg_Srv.html">Msg and Srv</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Launch Files</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Command_Line_Tools.html">DEBUG commands</a></li>
 </ul>
@@ -139,14 +138,21 @@
 </div>
 <div class="section" id="launch-files">
 <h1>Launch Files<a class="headerlink" href="#launch-files" title="Permalink to this headline"></a></h1>
-<p>Coming soon</p>
+<p><strong>WHAT IS A LAUNCH FILE</strong></p>
+<p>A launch file can start every single node with just one file. With one robot you can have many different nodes with many different paramaters, making it impossible to start without a launch file.</p>
+<p><strong>CREATE LAUNCH FILE</strong></p>
+<p>Create a new package dedicated to launch files in your src folder, and catkin_make the environment</p>
+<a class="reference internal image-reference" href="../../_images/launchpkg.png"><img alt="Directory Layout" src="../../_images/launchpkg.png" style="width: 700px;" /></a>
+<p>Create a launch directory inside of the newly created package. Enter this directory and create a new .launch file</p>
+<a class="reference internal image-reference" href="../../_images/launchfile.png"><img alt="Directory Layout" src="../../_images/launchfile.png" style="width: 700px;" /></a>
+<p>The launch file is basically xml format. You will create a paramater wich</p>
 </div>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Msg_Srv.html" class="btn btn-neutral float-left" title="Msg and Srv" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Client_server.html" class="btn btn-neutral float-left" title="Service Client" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="Command_Line_Tools.html" class="btn btn-neutral float-right" title="DEBUG commands" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

@@ -18,12 +18,11 @@
    Tutorials/Subscriber   
    Tutorials/Service_Server
    Tutorials/Client_server
-   Tutorials/Msg_Srv
    Tutorials/Launch
    Tutorials/Command_Line_Tools
 
 
-This is a ROS Tutorial guide meant to introduce the basics of ROS and give a user the understanding of how it works. By the end of the tutorial list the user should be able to create a workspace, packages, nodes, topics and debug their code with command line tools. 
+This section contains descriptions and information on all the ROS elements. By the end of the tutorial list the user should be able to create a workspace, packages, nodes, topics and debug their code with command line tools. 
 
 
 

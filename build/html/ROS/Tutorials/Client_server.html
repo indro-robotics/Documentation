@@ -23,7 +23,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Msg and Srv" href="Msg_Srv.html" />
+    <link rel="next" title="Launch Files" href="Launch.html" />
     <link rel="prev" title="Service Server" href="Service_Server.html" /> 
 </head>
 
@@ -62,7 +62,6 @@
 <li class="toctree-l3"><a class="reference internal" href="Subscriber.html">Subscriber</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Service_Server.html">Service Server</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Service Client</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Msg_Srv.html">Msg and Srv</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Launch.html">Launch Files</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Command_Line_Tools.html">DEBUG commands</a></li>
 </ul>
@@ -140,9 +139,12 @@
 <div class="section" id="service-client">
 <h1>Service Client<a class="headerlink" href="#service-client" title="Permalink to this headline"></a></h1>
 <p><strong>WHAT IS A ROS CLIENT</strong></p>
-<p>A ROS client is a node that makes requests to a service server.</p>
+<p>A ROS client is a node that makes requests to a service server. It sends the server information, and then waits for a responce from the server. It uses srv topic to communicate. The client in this example is a sum of two numbers example, where the server adds two numbers, and the client sends two numbers to be added, and waits for the responce.</p>
 <p><strong>CREATE A ROS CLIENT</strong></p>
-<a class="reference internal image-reference" href="../../_images/pythonClient.png"><img alt="Directory Layout" src="../../_images/pythonClient.png" style="width: 700px;" /></a>
+<p>Below is a template for Client code. Save this code in the scripts section of you’re catkin package. The client template shows a client that given two numbers two a server. The server will return the sum of the two numbers to the client.</p>
+<a class="reference internal image-reference" href="../../_images/client.png"><img alt="Directory Layout" src="../../_images/client.png" style="width: 700px;" /></a>
+<p>In the code we are adding two numbers 2 and 6 to get a sum of 8. The client sends the numbers to the server, the server does a computation, then returns the results. If we run our Sum server as created before, we can see the following output.</p>
+<a class="reference internal image-reference" href="../../_images/client.gif"><img alt="Directory Layout" src="../../_images/client.gif" style="width: 700px;" /></a>
 </div>
 
 
@@ -150,7 +152,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="Service_Server.html" class="btn btn-neutral float-left" title="Service Server" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Msg_Srv.html" class="btn btn-neutral float-right" title="Msg and Srv" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Launch.html" class="btn btn-neutral float-right" title="Launch Files" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

@@ -20,30 +20,20 @@ Create a new directory called scripts in your robot package, and this is where y
 	:width: 700
 	:alt: setup.bash
 
-You can now open up your new python file in any text editor you want, and use python to write you're node functionalities. Please review the following template for the node python file
+You can now open up your new python file in any text editor you want, and use python to write you're node functionalities. The following file is a template for a general node.
 
 
-.. image:: cond_template_node.png
+.. image:: properNode.png
 	:width: 700
 	:alt: setup.bash
 
-The basic python script shows beginner levle ROS Node functionalities. 
+The node is initialized with rospy.init_node("name of node"). The commented sections of this template are optional aspects of a node, depending on how you'd like it to function. To keep the node active, enter into a while loop before shutting down. 
 
-1. essential for setting up noetic environment!
-2. essential for importing ROS packages
-3. The main function of the ROS Node
-4. Initializing your Node (Essential)
-5. logging info to the terminal output. use this to interact with the node
-6. forces function to 'sleep' before moving onto next line of code
-7. creating a mathematical time called rate
-8. while the node is still active. Entering into a loop like this means it will keep the node active until the user shuts down the node themselves with ctr C
-9. printing a "Hello" into terminal. In the while loop this means that it will be printed in a loop
-10. using the rate time to sleep before re-entering the loop
+Before executing your node, you must run the ros master in another script. to run this, type roscore and have it running on the side. Then return to your terminal and run your python file with 'python my_first_node.py'.
 
-
-**NOTE**
-
-Before executing your node, you must run the ros master in another script. to run this, type roscore and have it running on the side. Then return to your terminal and run your python file with 'python my_first_node.py'
+.. image:: nodeTerminal.gif
+	:width: 700
+	:alt: setup.bash
 
 
 

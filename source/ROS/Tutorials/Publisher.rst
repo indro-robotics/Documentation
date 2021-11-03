@@ -20,5 +20,14 @@ Creating a publisher is easy. The publisher is going to be a python file created
 
 Similar to the regular node, we simply add a publisher class (called 'pub' in the example script). We give the publisher class the name of our desired topic, along with message type (String), and queue size (to tighten the feed if we want something smaller).
 
+.. image:: publisher.gif
+	:width: 700
+	:alt: Directory Layout
+
+
+
+
+
+
 
 
