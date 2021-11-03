@@ -13,27 +13,25 @@ Robot Documentation
 
 
 .. toctree::
-   :caption: Robots
+   :caption: AgileX
    :maxdepth: 2
    :hidden:
    
-   AgileX
+   Requirments
+   Hunter
+   Limo
+   Scout
+   Scout_Mini
+   Ranger_Mini
+   Bunker
+   Tracer
    
+Our documentation website contains documentation on all the software we use to execute our robots. We included guides on how to use the very same platforms we use, along with an introduction to our Robotic projects. Following through the guide will give the user the ability to even simulate our robots in Gazebo robotics simulator.
 
-.. image:: robot.jpeg
+
+.. image:: Drone.png
 	:width: 600
-	:alt: Alternative test
-
-
-
-Where to start
------------------
-
-start with pre requisites for environment setup and basic python linix instructions
-
-
-About
---------
+	:alt: Directory Layout
 
 
 

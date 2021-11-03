@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service Client &mdash; Indro Robotics Documentation  documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="canonical" href="https://docs.ros.org/en/ROS/Tutorials/Client_server.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Launch Files" href="Launch.html" />
+    <link rel="prev" title="Service Server" href="Service_Server.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #FFFFFF" >
+            <a href="../../index.html">
+            <img src="../../_static/indroLogo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Software</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../Prerequisites.html"><strong>Prerequisites</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Prerequisites/Ubuntu-Environment.html">Ubuntu Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Prerequisites/Linux-Terminal.html">Terminal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Prerequisites/Python.html">Python</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../ROS.html"><strong>ROS</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Core-Concepts.html">Core Concepts</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../Tutorials.html"><strong>ROS Elements</strong></a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Create_Catkin.html">Catkin Workspace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Create_Package.html">ROS Package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Create_Python_Node.html">ROS Node</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Publisher.html">Publisher</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Subscriber.html">Subscriber</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Service_Server.html">Service Server</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Service Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Launch.html">Launch Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Command_Line_Tools.html">DEBUG commands</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Example.html">Tutorial/Demonstration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Gazebo.html"><strong>Gazebo</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Gazebo/Installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Gazebo/Simulation.html">Simulation</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">AgileX</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Requirments.html"><strong>Requirments</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Hunter.html"><strong>Hunter</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Hunter/HunterSetup.html">Hunter Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Limo.html"><strong>Limo</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Limo/LimoSetup.html">Limo Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Scout.html"><strong>Scout</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Scout/Scout_Setup.html">Scout Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Scout_Mini.html"><strong>Scout Mini</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Scout_Mini/ScoutM_Setup.html">Scout Mini Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Ranger_Mini.html"><strong>Ranger Mini</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Ranger_Mini/RangerM_Setup.html">Ranger Mini Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Bunker.html"><strong>Bunker</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Bunker/BunkerSetup.html">Bunker Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Tracer.html"><strong>Tracer</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Tracer/TracerSetup.html">Tracer Setup</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #FFFFFF" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Indro Robotics Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../ROS.html"><strong>ROS</strong></a> &raquo;</li>
+          <li><a href="../Tutorials.html"><strong>ROS Elements</strong></a> &raquo;</li>
+      <li>Service Client</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/EllaHayashiIndro/Documentation/blob/rolling/source/ROS/Tutorials/Client_server.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="toctree-wrapper compound">
+</div>
+<div class="section" id="service-client">
+<h1>Service Client<a class="headerlink" href="#service-client" title="Permalink to this headline"></a></h1>
+<p><strong>WHAT IS A ROS CLIENT</strong></p>
+<p>A ROS client is a node that makes requests to a service server. It sends the server information, and then waits for a responce from the server. It uses srv topic to communicate. The client in this example is a sum of two numbers example, where the server adds two numbers, and the client sends two numbers to be added, and waits for the responce.</p>
+<p><strong>CREATE A ROS CLIENT</strong></p>
+<p>Below is a template for Client code. Save this code in the scripts section of you’re catkin package. The client template shows a client that given two numbers two a server. The server will return the sum of the two numbers to the client.</p>
+<a class="reference internal image-reference" href="../../_images/client.png"><img alt="Directory Layout" src="../../_images/client.png" style="width: 700px;" /></a>
+<p>In the code we are adding two numbers 2 and 6 to get a sum of 8. The client sends the numbers to the server, the server does a computation, then returns the results. If we run our Sum server as created before, we can see the following output.</p>
+<a class="reference internal image-reference" href="../../_images/client.gif"><img alt="Directory Layout" src="../../_images/client.gif" style="width: 700px;" /></a>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Service_Server.html" class="btn btn-neutral float-left" title="Service Server" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Launch.html" class="btn btn-neutral float-right" title="Launch Files" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Ella Hayashi.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
