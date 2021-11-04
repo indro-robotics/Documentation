@@ -9,6 +9,7 @@
    :glob:
 
    Ranger_Mini/RangerM_Setup
+   Ranger_Mini/GazeboRangSim
 
 
 Ranger Mini is an AgileX Robot with new omni-directional UGV created by AgileX Robotics, and based on new four-wheel and four-turn control theory, it adopts independent drive module design with integrated drive and steering. It has a variety of flexible drivingmodes and combing powerful maneuverability and flexibility, to bring more possibilities for mobile robot platforms for different applications.

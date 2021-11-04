@@ -80,30 +80,37 @@
 <li class="toctree-l1"><a class="reference internal" href="../../Requirments.html"><strong>Requirments</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Hunter.html"><strong>Hunter</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../Hunter/HunterSetup.html">Hunter Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Hunter/GazeboHuntSim.html">Gazebo Simulation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../Limo.html"><strong>Limo</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../Limo/LimoSetup.html">Limo Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Limo/GazeboLimoSim.html">Gazebo Simulation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../Scout.html"><strong>Scout</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../Scout/Scout_Setup.html">Scout Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Scout/GazeboScoutSim.html">Gazebo Simulation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../Scout_Mini.html"><strong>Scout Mini</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../Scout_Mini/ScoutM_Setup.html">Scout Mini Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Scout_Mini/GazeboSMiniSim.html">Gazebo Simulation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../Ranger_Mini.html"><strong>Ranger Mini</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../Ranger_Mini/RangerM_Setup.html">Ranger Mini Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Ranger_Mini/GazeboRangSim.html">Gazebo Simulation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../Bunker.html"><strong>Bunker</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../Bunker/BunkerSetup.html">Bunker Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Bunker/GazeboBunkSim.html">Gazebo Simulation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../Tracer.html"><strong>Tracer</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../Tracer/TracerSetup.html">Tracer Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Tracer/GazeboTraceSim.html">Gazebo Simulation</a></li>
 </ul>
 </li>
 </ul>
@@ -142,10 +149,13 @@
 <p>A launch file can start every single node with just one file. With one robot you can have many different nodes with many different paramaters, making it impossible to start without a launch file.</p>
 <p><strong>CREATE LAUNCH FILE</strong></p>
 <p>Create a new package dedicated to launch files in your src folder, and catkin_make the environment</p>
-<a class="reference internal image-reference" href="../../_images/launchpkg.png"><img alt="Directory Layout" src="../../_images/launchpkg.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../../_images/launchpkg.png"><img alt="Directory Layout" src="../../_images/launchpkg.png" style="width: 500px;" /></a>
 <p>Create a launch directory inside of the newly created package. Enter this directory and create a new .launch file</p>
-<a class="reference internal image-reference" href="../../_images/launchfile.png"><img alt="Directory Layout" src="../../_images/launchfile.png" style="width: 700px;" /></a>
-<p>The launch file is basically xml format. You will create a paramater wich</p>
+<a class="reference internal image-reference" href="../../_images/launchfile.png"><img alt="Directory Layout" src="../../_images/launchfile.png" style="width: 500px;" /></a>
+<p>The launch file is basically xml format. The launch file mainly consists of paramaters and node specifications. The contents of this file fit between a launch tag, &lt;launch&gt; and &lt;/launch&gt;. The rest of the contents are paramaters, and nodes and other tags. The following is an example of a .launch file. We are viewing the turtlesim launch file. Note the node names and pkg’s named in this file. For more information on turtlesim please visit the Tutorial page of our Documentation</p>
+<a class="reference internal image-reference" href="../../_images/turtlesimL.png"><img alt="Directory Layout" src="../../_images/turtlesimL.png" style="width: 500px;" /></a>
+<p>Read more information on creating <a class="reference external" href="http://wiki.ros.org/roslaunch/XML/param#:~:text=The%20tag%20defines%20a,treated%20like%20a%20private%20parameter">paramater tags</a></p>
+<p>Read more information on creating <a class="reference external" href="http://wiki.ros.org/roslaunch/XML/node">node tags</a></p>
 </div>
 
 

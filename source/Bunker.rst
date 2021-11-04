@@ -9,6 +9,7 @@
    :glob:
 
    Bunker/BunkerSetup
+   Bunker/GazeboBunkSim
 
 
 BUNKER is an AgileX robot that adopts crawler-type differential mechanical mechanism, which has extremely strong terrain adaptability. It is specially designed for special working environment and features differential rotation, strong load capacity, small mechanical loss and high ingress protection rating.

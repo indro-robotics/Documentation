@@ -9,6 +9,7 @@
    :glob:
 
    Scout/Scout_Setup
+   Scout/GazeboScoutSim
 
 
 SCOUT is an AgileX robot specially designed based on new energy consumption for industrial applications. It features compact body and low energy consumption. Equipped with a new cooling system and safety protection system, plus the four-wheel drive and differential rotation, it can move freely indoors and outdoors driven by the abundant power, and easily drive in complex application environments. 

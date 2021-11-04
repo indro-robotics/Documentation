@@ -9,6 +9,7 @@
    :glob:
 
    Limo/LimoSetup
+   Limo/GazeboLimoSim
 
 
 
