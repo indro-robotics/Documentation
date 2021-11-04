@@ -30,7 +30,7 @@ A simple way to create a new python file is to open up any text editor. Simply s
 
 **EXECUTE A PYTHON FILE**
 
-Executing a python file in the terminal is easy! Locate the python file in terminal using the terminal linux commands. If pressing 'ls', you should be able to see your file there. Then ust type "Python3 filename.py", and observe your executed file!
+Type "Python3 filename.py", in the directory containing your file.
 
 
 

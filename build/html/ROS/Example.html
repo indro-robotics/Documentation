@@ -80,30 +80,37 @@
 <li class="toctree-l1"><a class="reference internal" href="../Requirments.html"><strong>Requirments</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Hunter.html"><strong>Hunter</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Hunter/HunterSetup.html">Hunter Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Hunter/GazeboHuntSim.html">Gazebo Simulation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Limo.html"><strong>Limo</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Limo/LimoSetup.html">Limo Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Limo/GazeboLimoSim.html">Gazebo Simulation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Scout.html"><strong>Scout</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Scout/Scout_Setup.html">Scout Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Scout/GazeboScoutSim.html">Gazebo Simulation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Scout_Mini.html"><strong>Scout Mini</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Scout_Mini/ScoutM_Setup.html">Scout Mini Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Scout_Mini/GazeboSMiniSim.html">Gazebo Simulation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Ranger_Mini.html"><strong>Ranger Mini</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Ranger_Mini/RangerM_Setup.html">Ranger Mini Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Ranger_Mini/GazeboRangSim.html">Gazebo Simulation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Bunker.html"><strong>Bunker</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Bunker/BunkerSetup.html">Bunker Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Bunker/GazeboBunkSim.html">Gazebo Simulation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Tracer.html"><strong>Tracer</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Tracer/TracerSetup.html">Tracer Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Tracer/GazeboTraceSim.html">Gazebo Simulation</a></li>
 </ul>
 </li>
 </ul>
@@ -137,7 +144,7 @@
 </div>
 <div class="section" id="tutorial-demonstration">
 <h1>Tutorial/Demonstration<a class="headerlink" href="#tutorial-demonstration" title="Permalink to this headline"></a></h1>
-<p>We will be demonstrating Turtlesim, an in ROS example, demonstrating the functionality of ROS</p>
+<p>We will be demonstrating Turtlesim, an in ROS example, demonstrating the functionality of ROS. This tutorial is meant to give users an understanding of how ROS nodes work, and how to debut their future projects.</p>
 <p>If its not already installed:</p>
 <div class="literal-block-wrapper docutils container" id="id1">
 <div class="code-block-caption"><span class="caption-text">turtlesim:</span><a class="headerlink" href="#id1" title="Permalink to this code"></a></div>
@@ -145,18 +152,87 @@
 </pre></div>
 </div>
 </div>
-<p>You can play around with this example. First start rosmaster with roscore. Now you can launch nodes with rosrun. choose turtlesim_node.</p>
-<p>if you also run turtle_teleop_key you can use key nodes.</p>
-<p>you can see your nodes in rosnode list</p>
-<p>rostopic list will also show you the topics</p>
-<p>rqt_graph will show you the graph.</p>
-<p>rosservice list will show you the lists of service nodes</p>
-<p>ros service info /reset</p>
-<p>rosservice call /reset (“TAB for info”)</p>
-<p>#rosservice list</p>
-<p>#rosservice info /turtle1/teleport_relative</p>
-<p>#rosservice call /turtle1/teleport_relative “linear:1.0 angular: 0.0”</p>
-<p>go ahead and play and debut!!!</p>
+<p><strong>1.</strong> launch ROS master in seperate new terminal</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>roscore
+</pre></div>
+</div>
+<p><strong>2.</strong> View the available turtlesim nodes</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rosrun turtlesim
+</pre></div>
+</div>
+<dl class="simple">
+<dt>you should see the following list of nodes</dt><dd><ul class="simple">
+<li><p>draw_square</p></li>
+<li><p>mimic</p></li>
+<li><p>turtlesim_node</p></li>
+<li><p>turtle_teleop_key</p></li>
+</ul>
+</dd>
+</dl>
+<p>We will want to run the turtlesim_node to start</p>
+<p><strong>3.</strong> Run the turtlesim_node</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rosrun turtlesim turtlesim_node
+</pre></div>
+</div>
+<p>The command should open a seperate window containing a blue background with a turtle icon in the middle. This node controls the GUI.</p>
+<a class="reference internal image-reference" href="../_images/turtlesimopen.png"><img alt="Directory Layout" src="../_images/turtlesimopen.png" style="width: 200px;" /></a>
+<p>We are going to now start a new node that controls the movment of this turtle</p>
+<p><strong>4.</strong> Open a new terminal to start a new node. We want the node that controls the key movement of the turtle. Start the turtle_teleop_key node</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rosrun turtlesim turtle_teleop_key
+</pre></div>
+</div>
+<p>This node controls the key movement of the turtle. Press the arrow keys to direct the turtle, leaving a white line behind his path.</p>
+<a class="reference internal image-reference" href="../_images/turtle.gif"><img alt="Directory Layout" src="../_images/turtle.gif" style="width: 200px;" /></a>
+<p><strong>5.</strong> Open up a seperate terminal and see the active nodes in session</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rosnode list
+</pre></div>
+</div>
+<p>This command should open up a list showing you the active nodes. In this case we should see the two nodes teleop_turtle node and the turtlesim node that we started</p>
+<a class="reference internal image-reference" href="../_images/rosnode_list.png"><img alt="Directory Layout" src="../_images/rosnode_list.png" style="width: 500px;" /></a>
+<p><strong>6.</strong> If you would like to see information on a specific node, use the rosnode info command</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rosnode info /turtlesim
+</pre></div>
+</div>
+<p>This will give you alot of information on the node including publication and subscription information.</p>
+<p><strong>7.</strong> Run the rqt graph to node visualization</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rosrun rqt_graph rqt_graph
+</pre></div>
+</div>
+<p>You should be able to see the two active nodes running, teleop_turtle and turtlesim. You can also see that they are talking on a topic /turtle1/cmd_vel. It seams from the graph that /teleop_turtle node is publishing to /turtlesim node.</p>
+<a class="reference internal image-reference" href="../_images/rqtG.png"><img alt="Directory Layout" src="../_images/rqtG.png" style="width: 400px;" /></a>
+<p><strong>8.</strong> View the active topics</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rostopic list
+</pre></div>
+</div>
+<p>Take note of turtle1/cmd_vel, turtle1/color_sensor, and turtl1/pose topics listed.</p>
+<a class="reference internal image-reference" href="../_images/topiclist.png"><img alt="Directory Layout" src="../_images/topiclist.png" style="width: 400px;" /></a>
+<p><strong>9.</strong> Find info on a topic</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rostopic info /turtle1/cmd_vel
+</pre></div>
+</div>
+<p>Executing this command, we can see the publisher and subscriber information on this topic.</p>
+<a class="reference internal image-reference" href="../_images/topicinfo.png"><img alt="Directory Layout" src="../_images/topicinfo.png" style="width: 350px;" /></a>
+<p>The subscriber is the turtlesim node, and the publisher is the teleop_turtle. This means that the turtlesim node waits for information from the teleop_turtle on the topic cmd_vel. In other words. The GUI waits for a command from the keyboard before moving the turtle on the GUI.</p>
+<p><strong>10.</strong> See active topic</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rostopic echo /turtle1/cmd_vel
+</pre></div>
+</div>
+<p>When executing this command, nothing happens. This is because it is a subscriber. In order to see the topic output, move the turtle with the arrow keys.</p>
+<p><strong>11.</strong> Check active services</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rosservice list
+</pre></div>
+</div>
+<p>Note the /reset service. What is this?</p>
+<p><strong>12.</strong> Get info on a service</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rosservice info /reset
+</pre></div>
+</div>
+<p>the reset service gives us information on node and type of service. In /reset service, we can see the message type is Empty and it takes no arguments</p>
+<p><strong>13.</strong> Call a service</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rosservice call /reset &quot;{}&quot;
+</pre></div>
+</div>
+<p>calling this service with the empty paramaters, we can see what this service does to the turtlesim GUI. Once executing we can see the turtle moves back to it’s original location, in the center without any trace marks.</p>
 </div>
 
 

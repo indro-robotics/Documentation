@@ -49,6 +49,20 @@ Open up a new terminal and execute the following commands in order.
 
 	echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 
+**OPTIONAL FOR DEBUGGING**
+
+These are recomended installs for following the tutorial guides
+
+.. code-block:: text
+	:caption: Step 7:
+
+	sudo apt install ros-noetic-rosbash
+
+.. code-block:: text
+	:caption: Step 7:
+
+	sudo apt-get install ros-noetic-rqt-graph
+
 
 You should have ROS downloaded on your device now! Navigate to the `ROS instalation page <http://wiki.ros.org/noetic/Installation/Ubuntu>`_ for any further information on the installation process.
 
