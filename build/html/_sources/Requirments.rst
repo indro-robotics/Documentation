@@ -39,6 +39,10 @@ You also need to have **Gazebo** and **ROS** downloaded.
 	sudo apt-get install ros-melodic-rqt-robot-steering 
 
 
+.. code-block:: text
+	:caption: roslint package:
+
+sudo apt-get install ros-melodic-roslint
 
 
 

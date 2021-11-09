@@ -8,15 +8,23 @@ Installation
 
 Gazebo is a 3D simulator able to show real world models of robots in complex environments. Gazebo requires a Linux environment. In these tutorials we will be using Gazebo 11 paired with ROS Noetic. You can download and see more information on Gazebo `here <http://gazebosim.org/>`_.
 
-1. To install Gazebo, open a terminal and enter
+1. To install Gazebo9, open a terminal and enter
 
 .. code-block:: text
 	:caption: Install
 	
-	curl -sSL http://get.gazebosim.org | sh
+	sudo apt-get install gazebo9
+	
+Alternativly you can install Gazebo11 with the command
+
+.. code-block:: text
+	:caption: Install
+	
+	sudo apt-get install gazebo11
+	
 
 
-2. To run Gazebo, open a terminal and enter
+3. To run Gazebo, open a terminal and enter
 
 .. code-block:: text
 	:caption: Run

@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 #
-# rosindex documentation build configuration file, created by
-# sphinx-quickstart on Tue Oct  2 16:34:57 2018.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -11,10 +9,6 @@
 #
 # All configuration values have a default; values that are commented out
 # serve to show the default.
-
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 
 import itertools
@@ -28,12 +22,6 @@ from docutils.parsers.rst import Directive
 
 sys.path.append(os.path.abspath('./sphinx-multiversion'))
 
-#this is the path to my modules on my machine
-#sys.path.append(os.path.abspath('/home/ellahayashi/.local/lib/python2.7/site-packages'))
-
-# The suffix(es) of source filenames.
-# You can specify multiple suffix as a list of string:
-#
 # The master toctree document.
 master_doc = 'index'
 
@@ -111,7 +99,6 @@ html_css_files = [
 	'css/custom.css',
 ]
 
-
 html_logo = 'indroLogo.png'
 
 html_context = {
@@ -165,7 +152,7 @@ html_sourcelink_suffix = ''
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'ros2_docsdoc'
+htmlhelp_basename = 'indro_docsdoc'
 
 html_baseurl = 'https://docs.ros.org/en'
 
