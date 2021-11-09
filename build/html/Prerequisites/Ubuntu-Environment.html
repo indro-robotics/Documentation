@@ -71,7 +71,6 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Gazebo.html"><strong>Gazebo</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Gazebo/Installation.html">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Gazebo/Simulation.html">Simulation</a></li>
 </ul>
 </li>
 </ul>
@@ -144,34 +143,47 @@
 </div>
 <div class="section" id="ubuntu-installation">
 <h1>Ubuntu Installation<a class="headerlink" href="#ubuntu-installation" title="Permalink to this headline"></a></h1>
-<p>ROS Noetic requirs an Ubuntu 20.04. An easy way to do this is to create a virtual machine</p>
+<p>ROS Noetic requirs an Ubuntu 20.04. Ros Melodic requires ubuntu 18.04. An easy way to do this is to create a virtual machine. Download the Virtualbox app as well as one of the desktops 20.04 or 18.04 depending on which ROS version you want. We recomend Noetic for personal use as it is the most recent and up to date, while also giving users access to the most recent version of Gazebo. However ROS Melodic is required for our AgileX gazebo simulations.</p>
 <p><em>1. DOWNLOAD</em></p>
 <blockquote>
 <div><ul class="simple">
 <li><p><a class="reference external" href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a></p></li>
-<li><p><a class="reference external" href="https://ubuntu.com/download/desktop">Ubuntu Desktop</a></p></li>
+<li><p><a class="reference external" href="https://ubuntu.com/download/desktop">Ubuntu Desktop 20.04</a></p></li>
+<li><p><a class="reference external" href="https://releases.ubuntu.com/18.04/">Ubuntu Desktop 18.04</a></p></li>
 </ul>
 </div></blockquote>
 <p><em>2. CREATE VM</em></p>
+<p>In Virtual box, click the create new VM button, and make sure the bellow requirments are set before completing.</p>
 <blockquote>
-<div><p>In Virtual box, click the create new VM button, and make sure the bellow requirments are set before completing.
-* 2GB-8GB of memory.
-* A new virtual hard disk
-* VDI
-* Dynamically allocated
-* 25GB-50GB</p>
+<div><ul class="simple">
+<li><p>2GB-8GB of memory.</p></li>
+<li><p>A new virtual hard disk</p></li>
+<li><p>VDI</p></li>
+<li><p>Dynamically allocated</p></li>
+<li><p>25GB-50GB</p></li>
+</ul>
 </div></blockquote>
+<a class="reference internal image-reference" href="../_images/vmcreat.gif"><img alt="Directory Layout" src="../_images/vmcreat.gif" style="width: 500px;" /></a>
 <p><em>3. MODIFY SETTINGS</em></p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Navigate to settings/system/processor. Change the CPU amount from 1 CPU to 2-4</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/procesors.gif"><img alt="Directory Layout" src="../_images/procesors.gif" style="width: 500px;" /></a>
+<ul class="simple">
 <li><p>Navigate to settings/Network and change from NAT to Bridgeed Adapter to set up internet</p></li>
 </ul>
+<a class="reference internal image-reference" href="../_images/adaptor.gif"><img alt="Directory Layout" src="../_images/adaptor.gif" style="width: 500px;" /></a>
+<ul class="simple">
+<li><p>Navigate to settings/Storage and add in the virtual disk downloaded previously</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/disk.gif"><img alt="Directory Layout" src="../_images/disk.gif" style="width: 500px;" /></a>
 </div></blockquote>
 <p><em>4. START</em></p>
 <blockquote>
-<div><p>Start your VM, and when prompted, add the Ubuntu desktop downloaded previously.</p>
+<div><p>Start your VM by double clicking on navigation bar, or by pressing start button. When prompted, procead to “Install Ubuntu” option and compleat configuration.</p>
 </div></blockquote>
+<a class="reference internal image-reference" href="../_images/install.gif"><img alt="Directory Layout" src="../_images/install.gif" style="width: 500px;" /></a>
 </div>
 
 
