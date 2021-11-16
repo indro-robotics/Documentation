@@ -14,9 +14,23 @@ A ROS client is a node that makes requests to a service server. It sends the ser
 
 Below is a template for Client code. Save this code in the scripts section of you're catkin package. The client template shows a client that given two numbers two a server. The server will return the sum of the two numbers to the client.
 
-.. image:: client.png
-	:width: 700
-	:alt: Directory Layout
+.. code-block::
+	
+	#!/usr/bin/env python
+	import rospy
+	from rospy_tutorials.srv import AddTwoInts
+	
+	if __name__ == '__main__':
+		rospy.init_node("sum_client")
+		rospy.wait_for_service("/add_two_ints")
+		
+		try:
+			add_two_ints = rospy.ServiceProxy(".add_two_ints", AddTwoInts)
+			response = add_two_ints(2,6)
+			rospy.loginfo("Sum is: " + str(response.sum))
+		
+		except rospy.ServiceException as e:
+			rospy.logwarn("Service Failed" + str(e))
 
 
 In the code we are adding two numbers 2 and 6 to get a sum of 8. The client sends the numbers to the server, the server does a computation, then returns the results. If we run our Sum server as created before, we can see the following output.

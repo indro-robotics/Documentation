@@ -71,6 +71,10 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../Gazebo.html"><strong>Gazebo</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../Gazebo/Installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Gazebo/Guide.html">Navigation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Gazebo/Tutorial.html"><strong>Tutorial</strong></a><ul class="simple">
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -148,7 +152,21 @@
 <p>A ROS Publisher is a node that publishes a specific type of ROS message over a given ROS topic. Subscriber nodes can access these messages if they are interested in the same topic. For example, a radio transmitter publishes music on a frequency that is accessed by the topic, a radio station. Subscribers from home can access this by tuning into that radio station. This is the general principle behind ROS publishers.</p>
 <p><strong>CREATE A ROS PUBLISHER</strong></p>
 <p>Creating a publisher is easy. The publisher is going to be a python file created in the scripts folder of your chosen ROS package. The following picture is a template of what a publisher could look like.</p>
-<a class="reference internal image-reference" href="../../_images/python_publisher.png"><img alt="Directory Layout" src="../../_images/python_publisher.png" style="width: 700px;" /></a>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#/usr/bin/env python</span>
+<span class="kn">import</span> <span class="nn">rospy</span>
+<span class="kn">from</span> <span class="nn">std_msgs.msg</span> <span class="k">import</span> <span class="n">String</span>
+<span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span><span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+        <span class="n">rospy</span><span class="o">.</span><span class="n">init_node</span><span class="p">(</span><span class="s1">&#39;publisher_node&#39;</span><span class="p">)</span>
+        <span class="n">pub</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">Publisher</span><span class="p">(</span><span class="s2">&quot;name_of_Topic&quot;</span><span class="p">,</span> <span class="n">String</span><span class="p">,</span> <span class="n">queue_size</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+        <span class="n">rate</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">Rate</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">while</span> <span class="ow">not</span> <span class="n">rospy</span><span class="o">.</span><span class="n">is_shutdown</span><span class="p">():</span>
+                <span class="n">msg</span><span class="o">=</span><span class="n">String</span><span class="p">()</span>
+                <span class="n">msg</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="s2">&quot;Any messagve you want&quot;</span>
+                <span class="n">pub</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+                <span class="n">rate</span><span class="o">.</span><span class="n">sleep</span><span class="p">()</span>
+        <span class="n">rospy</span><span class="o">.</span><span class="n">logInfo</span><span class="p">(</span><span class="s2">&quot;Node was stopped&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
 <p>Similar to the regular node, we simply add a publisher class (called ‘pub’ in the example script). We give the publisher class the name of our desired topic, along with message type (String), and queue size (to tighten the feed if we want something smaller).</p>
 <a class="reference internal image-reference" href="../../_images/publisher.gif"><img alt="Directory Layout" src="../../_images/publisher.gif" style="width: 700px;" /></a>
 </div>

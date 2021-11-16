@@ -22,6 +22,7 @@ Gazebo Simulation
 
 .. code-block:: text
 
-	roslaunch hunter2_gazebo hunter2_gazebo.launch
+	roslaunch scout_description display_scout_v2.launch 
+
 
 

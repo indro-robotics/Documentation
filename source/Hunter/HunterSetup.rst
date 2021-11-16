@@ -48,21 +48,8 @@ Hunter Setup
 
 .. code-block:: text
 
-	cd ..
+	cd ..	
 
-
-8.5 If you need common3-graphics
-
-.. code-block:: text
-
-	sudo apt-get update
-	sudo apt-get install lsb-release
-	sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list'
-	wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
-	sudo apt-get update
-	sudo apt-get install libignition-physics-dev
-	sudo apt-get install libignition-common3-dev
-	
 
 9. Compile
 

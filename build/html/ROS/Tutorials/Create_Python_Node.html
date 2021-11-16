@@ -71,6 +71,10 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../Gazebo.html"><strong>Gazebo</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../Gazebo/Installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Gazebo/Guide.html">Navigation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Gazebo/Tutorial.html"><strong>Tutorial</strong></a><ul class="simple">
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -151,7 +155,18 @@
 <p>Create a new directory called scripts in your robot package, and this is where you will create your first python node in.</p>
 <a class="reference internal image-reference" href="../../_images/firstNode.png"><img alt="setup.bash" src="../../_images/firstNode.png" style="width: 700px;" /></a>
 <p>You can now open up your new python file in any text editor you want, and use python to write you’re node functionalities. The following file is a template for a general node.</p>
-<a class="reference internal image-reference" href="../../_images/properNode.png"><img alt="setup.bash" src="../../_images/properNode.png" style="width: 700px;" /></a>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
+<span class="kn">import</span> <span class="nn">rospy</span>
+<span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span><span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+        <span class="n">rospy</span><span class="o">.</span><span class="n">init_node</span><span class="p">(</span><span class="s2">&quot;pyton_node_name&quot;</span><span class="p">)</span> <span class="c1">#initializing the node. The name must be unique.</span>
+        <span class="n">rospy</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span><span class="s2">&quot;This node has been started&quot;</span><span class="p">)</span>
+        <span class="n">rospy</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">rate</span><span class="o">=</span><span class="n">rospy</span><span class="o">.</span><span class="n">Rate</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+        <span class="k">while</span> <span class="ow">not</span> <span class="n">rospy</span><span class="o">.</span><span class="n">is_shutdown</span><span class="p">():</span>
+                <span class="n">rospy</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
+                <span class="n">rate</span><span class="o">.</span><span class="n">sleep</span><span class="p">()</span>
+</pre></div>
+</div>
 <p>The node is initialized with rospy.init_node(“name of node”). The commented sections of this template are optional aspects of a node, depending on how you’d like it to function. To keep the node active, enter into a while loop before shutting down.</p>
 <p>Before executing your node, you must run the ros master in another script. to run this, type roscore and have it running on the side. Then return to your terminal and run your python file with ‘python my_first_node.py’.</p>
 <a class="reference internal image-reference" href="../../_images/nodeTerminal.gif"><img alt="setup.bash" src="../../_images/nodeTerminal.gif" style="width: 700px;" /></a>
