@@ -46,7 +46,7 @@ This window will allow you to control the movement of the robot using ackermann_
 
 .. raw:: html
 
-	<video controls src="_static/hunter.mp4"></video>
+	<video controls src="hunter.mp4"></video>
 
 
 
