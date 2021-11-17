@@ -8,7 +8,6 @@
    :maxdepth: 1
    :glob:
 
-   Tracer/TracerSetup
    Tracer/GazeboTraceSim
 
 

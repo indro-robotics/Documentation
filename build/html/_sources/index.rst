@@ -21,9 +21,7 @@ Robot Documentation
    Hunter
    Limo
    Scout
-   Scout_Mini
    Ranger_Mini
-   Bunker
    Tracer
    
 .. image:: robot.png

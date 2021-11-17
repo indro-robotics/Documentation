@@ -6,11 +6,11 @@
 Gazebo Simulation
 =============================
 
-1. Enter limo_ws folder
+1. Enter AgileX_ws folder
 
 .. code-block:: text
 
-	cd limo_ws
+	cd AgielX_ws
 
 2. Declare environment variables
 

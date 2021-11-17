@@ -1,6 +1,6 @@
 .. _RangerMGuide:
 
-**Ranger Mini**
+**Ranger**
 =================
 
 .. toctree::
@@ -8,7 +8,6 @@
    :maxdepth: 1
    :glob:
 
-   Ranger_Mini/RangerM_Setup
    Ranger_Mini/GazeboRangSim
 
 

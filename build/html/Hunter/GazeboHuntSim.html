@@ -24,7 +24,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Limo" href="../Limo.html" />
-    <link rel="prev" title="Hunter Setup" href="HunterSetup.html" /> 
+    <link rel="prev" title="Hunter" href="../Hunter.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -72,7 +72,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../Gazebo.html"><strong>Gazebo</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Gazebo/Installation.html">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Gazebo/Guide.html">Navigation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Gazebo/Tutorial.html"><strong>Tutorial</strong></a><ul class="simple">
+<li class="toctree-l2"><a class="reference internal" href="../Gazebo/Tutorial.html"><strong>Tutorial</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Tutorial/Model.html"><strong>Make a Model</strong></a><ul class="simple">
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -82,37 +85,22 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Requirments.html"><strong>Requirments</strong></a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../Hunter.html"><strong>Hunter</strong></a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="HunterSetup.html">Hunter Setup</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Gazebo Simulation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Limo.html"><strong>Limo</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Limo/LimoSetup.html">Limo Setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Limo/GazeboLimoSim.html">Gazebo Simulation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Scout.html"><strong>Scout</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Scout/Scout_Setup.html">Scout Setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Scout/GazeboScoutSim.html">Gazebo Simulation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../Scout_Mini.html"><strong>Scout Mini</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Scout_Mini/ScoutM_Setup.html">Scout Mini Setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Scout_Mini/GazeboSMiniSim.html">Gazebo Simulation</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../Ranger_Mini.html"><strong>Ranger Mini</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Ranger_Mini/RangerM_Setup.html">Ranger Mini Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Ranger_Mini.html"><strong>Ranger</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Ranger_Mini/GazeboRangSim.html">Gazebo Simulation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../Bunker.html"><strong>Bunker</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Bunker/BunkerSetup.html">Bunker Setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Bunker/GazeboBunkSim.html">Gazebo Simulation</a></li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal" href="../Tracer.html"><strong>Tracer</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Tracer/TracerSetup.html">Tracer Setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Tracer/GazeboTraceSim.html">Gazebo Simulation</a></li>
 </ul>
 </li>
@@ -148,9 +136,9 @@
 <div class="section" id="gazebo-simulation">
 <h1>Gazebo Simulation<a class="headerlink" href="#gazebo-simulation" title="Permalink to this headline"></a></h1>
 <ol class="arabic simple">
-<li><p>Enter hunter_ws folder</p></li>
+<li><p>Enter AgileX_ws folder</p></li>
 </ol>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>cd hunter_ws
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>cd AgileX_ws
 </pre></div>
 </div>
 <ol class="arabic simple" start="2">
@@ -173,13 +161,13 @@
 <p>Locate the rqt_robot_steering_RobotSteering window</p>
 <a class="reference internal image-reference" href="../_images/steering.png"><img alt="Directory Layout" src="../_images/steering.png" style="width: 600px;" /></a>
 <p>This window will allow you to control the movement of the robot using ackermann_steering_controller. The vertical bar acts as the forward, backwards movement needed to boost the robot into motion, while the horizontal bar controls the direction the robot accelerates in. Zoom in on the Hunter and play around with the controlls!</p>
-</div>
+<video controls src="_static/hunter.webm"></video></div>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="HunterSetup.html" class="btn btn-neutral float-left" title="Hunter Setup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Hunter.html" class="btn btn-neutral float-left" title="Hunter" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="../Limo.html" class="btn btn-neutral float-right" title="Limo" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
