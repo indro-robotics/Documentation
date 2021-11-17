@@ -71,6 +71,13 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../Gazebo.html"><strong>Gazebo</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../Gazebo/Installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Gazebo/Guide.html">Navigation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Gazebo/Tutorial.html"><strong>Tutorial</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Gazebo/Tutorial/Model.html"><strong>Make a Model</strong></a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -78,37 +85,22 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../Requirments.html"><strong>Requirments</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Hunter.html"><strong>Hunter</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../Hunter/HunterSetup.html">Hunter Setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Hunter/GazeboHuntSim.html">Gazebo Simulation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../Limo.html"><strong>Limo</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../Limo/LimoSetup.html">Limo Setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Limo/GazeboLimoSim.html">Gazebo Simulation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../Scout.html"><strong>Scout</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../Scout/Scout_Setup.html">Scout Setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Scout/GazeboScoutSim.html">Gazebo Simulation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../Scout_Mini.html"><strong>Scout Mini</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../Scout_Mini/ScoutM_Setup.html">Scout Mini Setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Scout_Mini/GazeboSMiniSim.html">Gazebo Simulation</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../../Ranger_Mini.html"><strong>Ranger Mini</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../Ranger_Mini/RangerM_Setup.html">Ranger Mini Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Ranger_Mini.html"><strong>Ranger</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../Ranger_Mini/GazeboRangSim.html">Gazebo Simulation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../Bunker.html"><strong>Bunker</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../Bunker/BunkerSetup.html">Bunker Setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Bunker/GazeboBunkSim.html">Gazebo Simulation</a></li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal" href="../../Tracer.html"><strong>Tracer</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../Tracer/TracerSetup.html">Tracer Setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Tracer/GazeboTraceSim.html">Gazebo Simulation</a></li>
 </ul>
 </li>
@@ -148,7 +140,21 @@
 <p>A subscriber is the other end of a publisher node. While a publisher releases data on a topic, if a subscriber is listening to that topic, it can receive all the data the publisher is releasing. To</p>
 <p><strong>CREATE A SUBSCRIBER</strong></p>
 <p>Subscriber code is very similar to publisher code. The subscriber is going to be a python file created in the scripts folder of your chosen ROS package. The following picture is a template of what a subscriber could look like.</p>
-<a class="reference internal image-reference" href="../../_images/subscriber.png"><img alt="Directory Layout" src="../../_images/subscriber.png" style="width: 700px;" /></a>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#/usr/bin/env python</span>
+<span class="kn">import</span> <span class="nn">rospy</span>
+<span class="kn">from</span> <span class="nn">std_msgs.msg</span> <span class="k">import</span> <span class="n">String</span>
+
+<span class="k">def</span> <span class="nf">callback_receive_data</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
+        <span class="n">rospy</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span><span class="s2">&quot;Message received: &quot;</span><span class="p">)</span>
+        <span class="n">rospy</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+        <span class="n">rospy</span><span class="o">.</span><span class="n">init_node</span><span class="p">(</span><span class="s1">&#39;subscriber_name&#39;</span><span class="p">)</span>
+        <span class="n">sub</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">Subscriber</span><span class="p">(</span><span class="s2">&quot;name_of_Topic&quot;</span><span class="p">,</span> <span class="n">String</span><span class="p">,</span> <span class="n">callback_receive_data</span><span class="p">)</span>
+
+        <span class="n">rospy</span><span class="o">.</span><span class="n">spin</span><span class="p">()</span> <span class="c1">#keep the script waiting for the callback</span>
+</pre></div>
+</div>
 <p>we have created a subscriber out of the subscriber class, with a topic name (should match publisher topic name if you want them to comunicate), the data type (string) and a function call that handles the data transmission.</p>
 <p>The rospy.spin() function is also an important step in the code. It allows the code to stop and wait on that spot. Otherwise, the script would end, and the node might shut down before even receiving anything from the publisher.</p>
 <p>Running the code with a publisher of the same topic, the output should look like the following.</p>

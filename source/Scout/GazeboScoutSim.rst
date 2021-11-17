@@ -6,11 +6,11 @@
 Gazebo Simulation
 =============================
 
-1. Enter scout_ws folder
+1. Enter AgileX_ws folder
 
 .. code-block:: text
 
-	cd scout_ws
+	cd AgileX_ws
 
 2. Declare environment variables
 
@@ -22,6 +22,7 @@ Gazebo Simulation
 
 .. code-block:: text
 
-	roslaunch hunter2_gazebo hunter2_gazebo.launch
+	roslaunch scout_description display_scout_v2.launch 
+
 
 

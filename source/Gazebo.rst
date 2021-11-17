@@ -8,15 +8,21 @@
    :glob:
 
    Gazebo/Installation
+   Gazebo/Guide
+   Gazebo/Tutorial
 
 
-Gazebo is a tool used to simulate the real world robots. With this simulation software we can easily modle and visualize our Robots in real world environments. We can also use this tool to test our ROS implemented software and nodes. With Gazebo, we can see our robot, move, work, act how we have developed it to. 
 
-
-
-.. image:: Gazebo.png
-	:width: 500
+.. image:: gazebo.png
+	:width: 100
 	:alt: Directory Layout
+	:align: center
+
+
+Gazebo is a tool used to simulate our robots without constructing them from hardware. Gazebo makes it possible to rapidly test our design, perform regression testing, train AI systems, and visualize our robot in realistic scenarios. Gazebo offers the ability to visualize our robotic creation in complex indoor and outdoor environments. Indro Robotics uses Gazebo to simulate many of our AgileX robots, and test our robotic software without needing the physical robot or hardware components.
+
+
+
 
 
 

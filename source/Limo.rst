@@ -8,7 +8,6 @@
    :maxdepth: 1
    :glob:
 
-   Limo/LimoSetup
    Limo/GazeboLimoSim
 
 

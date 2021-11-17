@@ -8,7 +8,6 @@
    :maxdepth: 1
    :glob:
 
-   Scout/Scout_Setup
    Scout/GazeboScoutSim
 
 

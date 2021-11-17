@@ -8,7 +8,6 @@
    :maxdepth: 1
    :glob:
 
-   Hunter/HunterSetup
    Hunter/GazeboHuntSim
 
 
@@ -24,7 +23,11 @@ Visit `AgileX <https://www.agilex.ai/index/product/id/9?lang=en-us>`_ for more i
 
 
 
-
+.. video:: test.mkv
+	:width: 500
+	:height: 300
+	:autoplay:
+	:nocontrols:
 
 
 

@@ -22,10 +22,20 @@ Create a new directory called scripts in your robot package, and this is where y
 
 You can now open up your new python file in any text editor you want, and use python to write you're node functionalities. The following file is a template for a general node.
 
+.. code-block::
+	
+	#!/usr/bin/env python
+	import rospy
+	if __name__=='__main__':
+		rospy.init_node("pyton_node_name") #initializing the node. The name must be unique.
+		rospy.loginfo("This node has been started")
+		rospy.sleep(1)
+		rate=rospy.Rate(10)
+		while not rospy.is_shutdown():
+			rospy.loginfo("Hello")
+			rate.sleep()
 
-.. image:: properNode.png
-	:width: 700
-	:alt: setup.bash
+
 
 The node is initialized with rospy.init_node("name of node"). The commented sections of this template are optional aspects of a node, depending on how you'd like it to function. To keep the node active, enter into a while loop before shutting down. 
 
