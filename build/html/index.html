@@ -45,13 +45,35 @@
               <p class="caption" role="heading"><span class="caption-text">Software</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="Prerequisites.html"><strong>Prerequisites</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Prerequisites/Ubuntu-Environment.html">Ubuntu Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Prerequisites/Linux-Terminal.html">Terminal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Prerequisites/Python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Prerequisites/Ubuntu-Environment.html">Ubuntu Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Prerequisites/Ubuntu-Environment.html#environment-downloads">Environment Downloads</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Prerequisites/Ubuntu-Environment.html#create-ubuntu-virtual-machine">Create Ubuntu Virtual Machine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Prerequisites/Ubuntu-Environment.html#modify-virtual-machine-settings">Modify Virtual Machine Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Prerequisites/Ubuntu-Environment.html#start-ubuntu-vm">Start Ubuntu VM</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Prerequisites/Linux-Terminal.html">Terminal</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Prerequisites/Linux-Terminal.html#linux-commands">Linux Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Prerequisites/Linux-Terminal.html#linux-environment-packages">Linux Environment Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Prerequisites/Linux-Terminal.html#vim">VIM</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Prerequisites/Python.html">Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Prerequisites/Python.html#install-python3">Install Python3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Prerequisites/Python.html#create-python3-file">Create Python3 File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Prerequisites/Python.html#execute-python3-file">Execute Python3 File</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="ROS.html"><strong>ROS</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="ROS/Installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ROS/Installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ROS/Installation.html#system-requirments">System Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ROS/Installation.html#download-ros">Download ROS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ROS/Installation.html#optional-ros-packages">Optional ROS Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ROS/Installation.html#test-ros-download">Test ROS Download</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="ROS/Core-Concepts.html">Core Concepts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ROS/Tutorials.html"><strong>ROS Elements</strong></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="ROS/Tutorials/Create_Catkin.html">Catkin Workspace</a></li>
@@ -69,10 +91,14 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Gazebo.html"><strong>Gazebo</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Gazebo/Installation.html">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Gazebo/Guide.html">Navigation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gazebo/Installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Gazebo/Installation.html#system-requirments">System Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Gazebo/Installation.html#download-gazebo11">Download Gazebo11</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Gazebo/Installation.html#run-gazebo">Run Gazebo</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="Gazebo/Tutorial.html"><strong>Tutorial</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Gazebo/Tutorial/Model.html"><strong>Make a Model</strong></a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="Gazebo/Tutorial/Model.html">Gazebo Basics</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -84,7 +110,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="Requirments.html"><strong>Requirments</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="Hunter.html"><strong>Hunter</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Hunter/GazeboHuntSim.html">Gazebo Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Hunter/GazeboHuntSim.html">Launch Gazebo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Hunter/GazeboHuntSim.html#hunter-simulation">Hunter Simulation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Limo.html"><strong>Limo</strong></a><ul>
@@ -135,10 +164,21 @@
 </div>
 <div class="toctree-wrapper compound">
 </div>
-<a class="reference internal image-reference" href="_images/robot.png"><img alt="Directory Layout" src="_images/robot.png" style="width: 200px;" /></a>
-<a class="reference internal image-reference" href="_images/operate.png"><img alt="Directory Layout" src="_images/operate.png" style="width: 200px;" /></a>
-<a class="reference internal image-reference" href="_images/robot2.png"><img alt="Directory Layout" src="_images/robot2.png" style="width: 200px;" /></a>
-<p>Our documentation website contains information on the software we use to execute our robots including the Robotic Operating System and Gazebo simulation tool. We included guides on how to use software to make the software components of robots. We also have demonstrations and simulations of our internal robots. Following through the guide will give the user the ability to even simulate our robots in Gazebo robotics simulator, and also learn the essentials to creating these products</p>
+<a class="reference internal image-reference" href="_images/robot.png"><img alt="Directory Layout" class="align-left" src="_images/robot.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="_images/operate.png"><img alt="Directory Layout" src="_images/operate.png" style="width: 235px;" /></a>
+<a class="reference internal image-reference" href="_images/robot2.png"><img alt="Directory Layout" class="align-right" src="_images/robot2.png" style="width: 200px;" /></a>
+<p>Our documentation website contains information on our software we use to execute our robots, and our AgileX products.</p>
+<p><strong>Software</strong></p>
+<p>Our software documentation used includes information on Python3, the Robotic Operating System and Gazebo simulation tool. We included guides and tutorials on how to use these software. User’s following these examples will have an understanding of how we build our robots, as well as understand how we test our products.</p>
+<p><strong>AgileX</strong></p>
+<p>Our AgileX products are listed under the AgileX feild and include descriptions on the robots as well as a demonstration on how to simulate their function in Gazebo. User’s can test out our products on their own and see working versions of these robots in Gazebo. Knowledge of how to install and run Gazebo is found under our software feild.</p>
+<p><strong>Resources</strong></p>
+<ul class="simple">
+<li><p>Visit <a class="reference external" href="https://www.ros.org/">ROS home page</a> for more information on ROS</p></li>
+<li><p>Visit <a class="reference external" href="http://gazebosim.org/">Gazebo home page</a> for more information on Gazebo</p></li>
+<li><p>Visit <a class="reference external" href="https://www.agilex.ai/index/product/id/9?lang=en-us">AgileX</a> for more information on AgileX robots.</p></li>
+<li><p>Visit <a class="reference external" href="https://indrorobotics.ca/">Indro Robotics home page</a> for more information on the company</p></li>
+</ul>
 </div>
 
 

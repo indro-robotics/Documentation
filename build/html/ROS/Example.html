@@ -46,13 +46,35 @@
               <p class="caption" role="heading"><span class="caption-text">Software</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Prerequisites.html"><strong>Prerequisites</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html">Ubuntu Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html">Terminal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html">Ubuntu Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html#environment-downloads">Environment Downloads</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html#create-ubuntu-virtual-machine">Create Ubuntu Virtual Machine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html#modify-virtual-machine-settings">Modify Virtual Machine Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html#start-ubuntu-vm">Start Ubuntu VM</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html">Terminal</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html#linux-commands">Linux Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html#linux-environment-packages">Linux Environment Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html#vim">VIM</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Python.html">Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Python.html#install-python3">Install Python3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Python.html#create-python3-file">Create Python3 File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Python.html#execute-python3-file">Execute Python3 File</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../ROS.html"><strong>ROS</strong></a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="Installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Installation.html#system-requirments">System Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Installation.html#download-ros">Download ROS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Installation.html#optional-ros-packages">Optional ROS Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Installation.html#test-ros-download">Test ROS Download</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="Core-Concepts.html">Core Concepts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Tutorials.html"><strong>ROS Elements</strong></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Tutorials/Create_Catkin.html">Catkin Workspace</a></li>
@@ -70,10 +92,14 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Gazebo.html"><strong>Gazebo</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Gazebo/Installation.html">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Gazebo/Guide.html">Navigation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Gazebo/Installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Installation.html#system-requirments">System Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Installation.html#download-gazebo11">Download Gazebo11</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Installation.html#run-gazebo">Run Gazebo</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../Gazebo/Tutorial.html"><strong>Tutorial</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Tutorial/Model.html"><strong>Make a Model</strong></a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Tutorial/Model.html">Gazebo Basics</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -85,7 +111,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../Requirments.html"><strong>Requirments</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Hunter.html"><strong>Hunter</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Hunter/GazeboHuntSim.html">Gazebo Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Hunter/GazeboHuntSim.html">Launch Gazebo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Hunter/GazeboHuntSim.html#hunter-simulation">Hunter Simulation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Limo.html"><strong>Limo</strong></a><ul>
@@ -166,20 +195,20 @@
 </pre></div>
 </div>
 <p>The command should open a seperate window containing a blue background with a turtle icon in the middle. This node controls the GUI.</p>
-<a class="reference internal image-reference" href="../_images/turtlesimopen.png"><img alt="Directory Layout" src="../_images/turtlesimopen.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="../_images/turtlesimopen.png"><img alt="Directory Layout" class="align-center" src="../_images/turtlesimopen.png" style="width: 200px;" /></a>
 <p>We are going to now start a new node that controls the movment of this turtle</p>
 <p><strong>4.</strong> Open a new terminal to start a new node. We want the node that controls the key movement of the turtle. Start the turtle_teleop_key node</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rosrun turtlesim turtle_teleop_key
 </pre></div>
 </div>
 <p>This node controls the key movement of the turtle. Press the arrow keys to direct the turtle, leaving a white line behind his path.</p>
-<a class="reference internal image-reference" href="../_images/turtle.gif"><img alt="Directory Layout" src="../_images/turtle.gif" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="../_images/turtle.gif"><img alt="Directory Layout" class="align-center" src="../_images/turtle.gif" style="width: 200px;" /></a>
 <p><strong>5.</strong> Open up a seperate terminal and see the active nodes in session</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rosnode list
 </pre></div>
 </div>
 <p>This command should open up a list showing you the active nodes. In this case we should see the two nodes teleop_turtle node and the turtlesim node that we started</p>
-<a class="reference internal image-reference" href="../_images/rosnode_list.png"><img alt="Directory Layout" src="../_images/rosnode_list.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/rosnode_list.png"><img alt="Directory Layout" class="align-center" src="../_images/rosnode_list.png" style="width: 500px;" /></a>
 <p><strong>6.</strong> If you would like to see information on a specific node, use the rosnode info command</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rosnode info /turtlesim
 </pre></div>
@@ -190,19 +219,19 @@
 </pre></div>
 </div>
 <p>You should be able to see the two active nodes running, teleop_turtle and turtlesim. You can also see that they are talking on a topic /turtle1/cmd_vel. It seams from the graph that /teleop_turtle node is publishing to /turtlesim node.</p>
-<a class="reference internal image-reference" href="../_images/rqtG.png"><img alt="Directory Layout" src="../_images/rqtG.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/rqtG.png"><img alt="Directory Layout" class="align-center" src="../_images/rqtG.png" style="width: 400px;" /></a>
 <p><strong>8.</strong> View the active topics</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rostopic list
 </pre></div>
 </div>
 <p>Take note of turtle1/cmd_vel, turtle1/color_sensor, and turtl1/pose topics listed.</p>
-<a class="reference internal image-reference" href="../_images/topiclist.png"><img alt="Directory Layout" src="../_images/topiclist.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/topiclist.png"><img alt="Directory Layout" class="align-center" src="../_images/topiclist.png" style="width: 400px;" /></a>
 <p><strong>9.</strong> Find info on a topic</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rostopic info /turtle1/cmd_vel
 </pre></div>
 </div>
 <p>Executing this command, we can see the publisher and subscriber information on this topic.</p>
-<a class="reference internal image-reference" href="../_images/topicinfo.png"><img alt="Directory Layout" src="../_images/topicinfo.png" style="width: 350px;" /></a>
+<a class="reference internal image-reference" href="../_images/topicinfo.png"><img alt="Directory Layout" class="align-center" src="../_images/topicinfo.png" style="width: 350px;" /></a>
 <p>The subscriber is the turtlesim node, and the publisher is the teleop_turtle. This means that the turtlesim node waits for information from the teleop_turtle on the topic cmd_vel. In other words. The GUI waits for a command from the keyboard before moving the turtle on the GUI.</p>
 <p><strong>10.</strong> See active topic</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rostopic echo /turtle1/cmd_vel

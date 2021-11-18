@@ -46,13 +46,35 @@
               <p class="caption" role="heading"><span class="caption-text">Software</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Prerequisites.html"><strong>Prerequisites</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html">Ubuntu Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html">Terminal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html">Ubuntu Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html#environment-downloads">Environment Downloads</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html#create-ubuntu-virtual-machine">Create Ubuntu Virtual Machine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html#modify-virtual-machine-settings">Modify Virtual Machine Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html#start-ubuntu-vm">Start Ubuntu VM</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html">Terminal</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html#linux-commands">Linux Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html#linux-environment-packages">Linux Environment Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html#vim">VIM</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Python.html">Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Python.html#install-python3">Install Python3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Python.html#create-python3-file">Create Python3 File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Python.html#execute-python3-file">Execute Python3 File</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../ROS.html"><strong>ROS</strong></a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Installation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#system-requirments">System Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#download-ros">Download ROS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#optional-ros-packages">Optional ROS Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#test-ros-download">Test ROS Download</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="Core-Concepts.html">Core Concepts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Tutorials.html"><strong>ROS Elements</strong></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Tutorials/Create_Catkin.html">Catkin Workspace</a></li>
@@ -70,10 +92,14 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Gazebo.html"><strong>Gazebo</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Gazebo/Installation.html">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Gazebo/Guide.html">Navigation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Gazebo/Installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Installation.html#system-requirments">System Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Installation.html#download-gazebo11">Download Gazebo11</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Installation.html#run-gazebo">Run Gazebo</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../Gazebo/Tutorial.html"><strong>Tutorial</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Tutorial/Model.html"><strong>Make a Model</strong></a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Tutorial/Model.html">Gazebo Basics</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -85,7 +111,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../Requirments.html"><strong>Requirments</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Hunter.html"><strong>Hunter</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Hunter/GazeboHuntSim.html">Gazebo Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Hunter/GazeboHuntSim.html">Launch Gazebo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Hunter/GazeboHuntSim.html#hunter-simulation">Hunter Simulation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Limo.html"><strong>Limo</strong></a><ul>
@@ -136,65 +165,49 @@
 <div class="section" id="installation">
 <h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline"></a></h1>
 <p>This page explains how to install ROS on Ubuntu Linux.</p>
-<p><strong>SYSTEM REQUIRMENTS</strong></p>
+<div class="section" id="system-requirments">
+<h2>System Requirments<a class="headerlink" href="#system-requirments" title="Permalink to this headline"></a></h2>
 <p>We will be using Ubuntu 20.04 / ROS Noetic / Python 3. For information on how to set up Ubuntu environment, and informatin on Linux Terminal/python 3, visit Prerequisites page.</p>
-<p><strong>DOWNLOAD ROS</strong></p>
+</div>
+<div class="section" id="download-ros">
+<h2>Download ROS<a class="headerlink" href="#download-ros" title="Permalink to this headline"></a></h2>
 <p>Open up a new terminal and execute the following commands in order.</p>
-<div class="literal-block-wrapper docutils container" id="id1">
-<div class="code-block-caption"><span class="caption-text">Step 1:</span><a class="headerlink" href="#id1" title="Permalink to this code"></a></div>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>sudo sh -c &#39;echo &quot;deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main&quot; &gt; /etc/apt/sources.list.d/ros-latest.list&#39;
 </pre></div>
 </div>
-</div>
-<div class="literal-block-wrapper docutils container" id="id2">
-<div class="code-block-caption"><span class="caption-text">Step 2:</span><a class="headerlink" href="#id2" title="Permalink to this code"></a></div>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>sudo apt install curl
 </pre></div>
 </div>
-</div>
-<div class="literal-block-wrapper docutils container" id="id3">
-<div class="code-block-caption"><span class="caption-text">Step 3:</span><a class="headerlink" href="#id3" title="Permalink to this code"></a></div>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 </pre></div>
 </div>
-</div>
-<div class="literal-block-wrapper docutils container" id="id4">
-<div class="code-block-caption"><span class="caption-text">Step 4:</span><a class="headerlink" href="#id4" title="Permalink to this code"></a></div>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>sudo apt update
 </pre></div>
 </div>
-</div>
-<div class="literal-block-wrapper docutils container" id="id5">
-<div class="code-block-caption"><span class="caption-text">Step 5:</span><a class="headerlink" href="#id5" title="Permalink to this code"></a></div>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>sudo apt install ros-noetic-desktop-full
 </pre></div>
 </div>
-</div>
-<div class="literal-block-wrapper docutils container" id="id6">
-<div class="code-block-caption"><span class="caption-text">Step 6:</span><a class="headerlink" href="#id6" title="Permalink to this code"></a></div>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>echo &quot;source /opt/ros/noetic/setup.bash&quot; &gt;&gt; ~/.bashrc
 </pre></div>
 </div>
 </div>
-<p><strong>OPTIONAL FOR DEBUGGING</strong></p>
-<p>These are recomended installs for following the tutorial guides</p>
-<div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-text">Step 7:</span><a class="headerlink" href="#id7" title="Permalink to this code"></a></div>
+<div class="section" id="optional-ros-packages">
+<h2>Optional ROS Packages<a class="headerlink" href="#optional-ros-packages" title="Permalink to this headline"></a></h2>
+<p>These are recomended installs and required to follow the tutorial guides.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>sudo apt install ros-noetic-rosbash
 </pre></div>
 </div>
-</div>
-<div class="literal-block-wrapper docutils container" id="id8">
-<div class="code-block-caption"><span class="caption-text">Step 7:</span><a class="headerlink" href="#id8" title="Permalink to this code"></a></div>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>sudo apt-get install ros-noetic-rqt-graph
 </pre></div>
 </div>
-</div>
 <p>You should have ROS downloaded on your device now! Navigate to the <a class="reference external" href="http://wiki.ros.org/noetic/Installation/Ubuntu">ROS instalation page</a> for any further information on the installation process.</p>
-<p><strong>TEST DOWNLOAD</strong></p>
-<p>To test your newly downloaded ROS, start a ROS master by simply opening a new terminal and execute ‘roscore’. You should see the following to know it is a success.</p>
-<a class="reference internal image-reference" href="../_images/roscore.png"><img alt="Alternative test" src="../_images/roscore.png" style="width: 700px;" /></a>
+</div>
+<div class="section" id="test-ros-download">
+<h2>Test ROS Download<a class="headerlink" href="#test-ros-download" title="Permalink to this headline"></a></h2>
+<p>To test your newly installed ROS, start a ROS master by simply opening a new terminal and execute ‘roscore’. You should see the following to know it is a success.</p>
+<a class="reference internal image-reference" href="../_images/roscore.png"><img alt="Alternative test" class="align-center" src="../_images/roscore.png" style="width: 500px;" /></a>
 <p>To exit the roscore master, press Ctrl+C to kill the process.</p>
+</div>
 </div>
 
 

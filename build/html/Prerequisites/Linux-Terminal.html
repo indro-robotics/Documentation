@@ -46,13 +46,35 @@
               <p class="caption" role="heading"><span class="caption-text">Software</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../Prerequisites.html"><strong>Prerequisites</strong></a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="Ubuntu-Environment.html">Ubuntu Installation</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Terminal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Ubuntu-Environment.html">Ubuntu Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Ubuntu-Environment.html#environment-downloads">Environment Downloads</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ubuntu-Environment.html#create-ubuntu-virtual-machine">Create Ubuntu Virtual Machine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ubuntu-Environment.html#modify-virtual-machine-settings">Modify Virtual Machine Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ubuntu-Environment.html#start-ubuntu-vm">Start Ubuntu VM</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Terminal</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#linux-commands">Linux Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#linux-environment-packages">Linux Environment Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vim">VIM</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Python.html">Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Python.html#install-python3">Install Python3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Python.html#create-python3-file">Create Python3 File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Python.html#execute-python3-file">Execute Python3 File</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../ROS.html"><strong>ROS</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../ROS/Installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ROS/Installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Installation.html#system-requirments">System Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Installation.html#download-ros">Download ROS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Installation.html#optional-ros-packages">Optional ROS Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Installation.html#test-ros-download">Test ROS Download</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../ROS/Core-Concepts.html">Core Concepts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ROS/Tutorials.html"><strong>ROS Elements</strong></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../ROS/Tutorials/Create_Catkin.html">Catkin Workspace</a></li>
@@ -70,10 +92,14 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Gazebo.html"><strong>Gazebo</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Gazebo/Installation.html">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Gazebo/Guide.html">Navigation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Gazebo/Installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Installation.html#system-requirments">System Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Installation.html#download-gazebo11">Download Gazebo11</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Installation.html#run-gazebo">Run Gazebo</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../Gazebo/Tutorial.html"><strong>Tutorial</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Tutorial/Model.html"><strong>Make a Model</strong></a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Tutorial/Model.html">Gazebo Basics</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -85,7 +111,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../Requirments.html"><strong>Requirments</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Hunter.html"><strong>Hunter</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Hunter/GazeboHuntSim.html">Gazebo Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Hunter/GazeboHuntSim.html">Launch Gazebo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Hunter/GazeboHuntSim.html#hunter-simulation">Hunter Simulation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Limo.html"><strong>Limo</strong></a><ul>
@@ -135,9 +164,10 @@
 </div>
 <div class="section" id="terminal">
 <h1>Terminal<a class="headerlink" href="#terminal" title="Permalink to this headline"></a></h1>
-<p><strong>LINUX BASICS</strong></p>
+<div class="section" id="linux-commands">
+<h2>Linux Commands<a class="headerlink" href="#linux-commands" title="Permalink to this headline"></a></h2>
 <p>Navigating the Linux terminal is an essential requirment when using software such as ROS and Gazebo. Since most development is done using the terminal, it is important to know and understand the following basic commands.</p>
-<table class="colwidths-given docutils align-default" id="id1">
+<table class="colwidths-given docutils align-center" id="id1">
 <caption><span class="caption-text">Basic Linux Commands</span><a class="headerlink" href="#id1" title="Permalink to this table"></a></caption>
 <colgroup>
 <col style="width: 25%" />
@@ -172,9 +202,11 @@
 </tr>
 </tbody>
 </table>
-<p><strong>INSTALLS</strong></p>
+</div>
+<div class="section" id="linux-environment-packages">
+<h2>Linux Environment Packages<a class="headerlink" href="#linux-environment-packages" title="Permalink to this headline"></a></h2>
 <p>There are also essential installations/updates that anyone following the guide would want to consider installing.</p>
-<table class="colwidths-given docutils align-default" id="id2">
+<table class="colwidths-given docutils align-center" id="id2">
 <caption><span class="caption-text">Install/update the following</span><a class="headerlink" href="#id2" title="Permalink to this table"></a></caption>
 <colgroup>
 <col style="width: 25%" />
@@ -197,9 +229,11 @@
 </tr>
 </tbody>
 </table>
-<p><strong>VIM</strong></p>
+</div>
+<div class="section" id="vim">
+<h2>VIM<a class="headerlink" href="#vim" title="Permalink to this headline"></a></h2>
 <p>Vim is another consideration for people working in the terminal. Although less user friendly then other text editors, it can be a convenient tool other than working with an editor. For more information on Vim we strongly recomend looking at the online documentation. Below are a list of some (but not all) of the most important commands.</p>
-<table class="colwidths-given docutils align-default" id="id3">
+<table class="colwidths-given docutils align-center" id="id3">
 <caption><span class="caption-text">Vim Commands</span><a class="headerlink" href="#id3" title="Permalink to this table"></a></caption>
 <colgroup>
 <col style="width: 25%" />
@@ -225,6 +259,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 </div>
 
 

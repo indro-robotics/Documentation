@@ -46,13 +46,35 @@
               <p class="caption" role="heading"><span class="caption-text">Software</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../Prerequisites.html"><strong>Prerequisites</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../Prerequisites/Ubuntu-Environment.html">Ubuntu Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Prerequisites/Linux-Terminal.html">Terminal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Prerequisites/Python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Prerequisites/Ubuntu-Environment.html">Ubuntu Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Prerequisites/Ubuntu-Environment.html#environment-downloads">Environment Downloads</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Prerequisites/Ubuntu-Environment.html#create-ubuntu-virtual-machine">Create Ubuntu Virtual Machine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Prerequisites/Ubuntu-Environment.html#modify-virtual-machine-settings">Modify Virtual Machine Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Prerequisites/Ubuntu-Environment.html#start-ubuntu-vm">Start Ubuntu VM</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../Prerequisites/Linux-Terminal.html">Terminal</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Prerequisites/Linux-Terminal.html#linux-commands">Linux Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Prerequisites/Linux-Terminal.html#linux-environment-packages">Linux Environment Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Prerequisites/Linux-Terminal.html#vim">VIM</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../Prerequisites/Python.html">Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Prerequisites/Python.html#install-python3">Install Python3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Prerequisites/Python.html#create-python3-file">Create Python3 File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Prerequisites/Python.html#execute-python3-file">Execute Python3 File</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../ROS.html"><strong>ROS</strong></a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../Installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Installation.html#system-requirments">System Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Installation.html#download-ros">Download ROS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Installation.html#optional-ros-packages">Optional ROS Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Installation.html#test-ros-download">Test ROS Download</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../Core-Concepts.html">Core Concepts</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../Tutorials.html"><strong>ROS Elements</strong></a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="Create_Catkin.html">Catkin Workspace</a></li>
@@ -70,10 +92,14 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../Gazebo.html"><strong>Gazebo</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../Gazebo/Installation.html">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Gazebo/Guide.html">Navigation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Gazebo/Installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Gazebo/Installation.html#system-requirments">System Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Gazebo/Installation.html#download-gazebo11">Download Gazebo11</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Gazebo/Installation.html#run-gazebo">Run Gazebo</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../../Gazebo/Tutorial.html"><strong>Tutorial</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../Gazebo/Tutorial/Model.html"><strong>Make a Model</strong></a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="../../Gazebo/Tutorial/Model.html">Gazebo Basics</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -85,7 +111,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../Requirments.html"><strong>Requirments</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Hunter.html"><strong>Hunter</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../Hunter/GazeboHuntSim.html">Gazebo Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Hunter/GazeboHuntSim.html">Launch Gazebo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Hunter/GazeboHuntSim.html#hunter-simulation">Hunter Simulation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../Limo.html"><strong>Limo</strong></a><ul>
@@ -137,8 +166,7 @@
 <div class="section" id="ros-node">
 <h1>ROS Node<a class="headerlink" href="#ros-node" title="Permalink to this headline"></a></h1>
 <p><strong>WHAT IS A NODE</strong></p>
-<p>A node is a process that performs computation. A node is an executable program inside the Robot. There are many nodes inside one robot, and they all communicate with eachother. Nodes are an extreamly useful functionality of ROS as they reduce code complexity for the developer.</p>
-<p>A package as discussed, is an independent unit inside of a robot. A package is empty however, and you need to create nodes inside packages before anything can happen. For example, if a robot has a camera package, where the package handles the camera operations as an independent unit from the others, you can create nodes inside this package. The camera package needs a driver node, as well as an image processing node. The nodes communicate using ROS communication functionalities. You can also have nodes from seperate packages communicate with eachother as well. For example, the image processing node may send data to a motion planning package node.</p>
+<p>A node is a process that performs computation. For example, a node could control the motion plan, or the camera driver of a robot. There exists many different nodes inside one robot, each with a unique task and able to communicate with eachother.</p>
 <p><strong>CREATE PYTHON NODE</strong></p>
 <p>Create a new directory called scripts in your robot package, and this is where you will create your first python node in.</p>
 <a class="reference internal image-reference" href="../../_images/firstNode.png"><img alt="setup.bash" src="../../_images/firstNode.png" style="width: 700px;" /></a>
@@ -155,8 +183,8 @@
                 <span class="n">rate</span><span class="o">.</span><span class="n">sleep</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>The node is initialized with rospy.init_node(“name of node”). The commented sections of this template are optional aspects of a node, depending on how you’d like it to function. To keep the node active, enter into a while loop before shutting down.</p>
-<p>Before executing your node, you must run the ros master in another script. to run this, type roscore and have it running on the side. Then return to your terminal and run your python file with ‘python my_first_node.py’.</p>
+<p>The node is initialized with <strong>rospy.init_node(“name of node”)</strong>. The while loop keeps the node active.</p>
+<p>Before executing your node, you must run the ros master in another terminal. Open up a new terminal and type ‘roscore’. Then return to your terminal and run your python file with ‘python my_first_node.py’. You can use ‘roslist’ command in another terminal to view active nodes.</p>
 <a class="reference internal image-reference" href="../../_images/nodeTerminal.gif"><img alt="setup.bash" src="../../_images/nodeTerminal.gif" style="width: 700px;" /></a>
 </div>
 

@@ -19,6 +19,7 @@ LIMO is a mobile AgileX robot with innovative multi-modal, compact, and customiz
 .. image:: Limo.png
 	:width: 500
 	:alt: Directory Layout
+	:align: center
 
 
 Visit `AgileX <https://www.agilex.ai/index/product/id/9?lang=en-us>`_ for more information on the Limo Robot.

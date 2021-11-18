@@ -6,15 +6,17 @@
 Ubuntu Installation
 =======================
 
-ROS Noetic requirs an Ubuntu 20.04. Ros Melodic requires ubuntu 18.04. An easy way to do this is to create a virtual machine. Download the Virtualbox app as well as one of the desktops 20.04 or 18.04 depending on which ROS version you want. We recomend Noetic for personal use as it is the most recent and up to date, while also giving users access to the most recent version of Gazebo. However ROS Melodic is required for our AgileX gazebo simulations.
+ROS Noetic requirs an Ubuntu 20.04. An easy way to do this is to create a virtual machine. Download the Virtualbox app as well as the 20.04 ubuntu desktop.
 
-*1. DOWNLOAD*
+Environment Downloads
+-----------------------
 
     * `VirtualBox <https://www.virtualbox.org/wiki/Downloads>`_ 
     * `Ubuntu Desktop 20.04 <https://ubuntu.com/download/desktop>`_
-    * `Ubuntu Desktop 18.04 <https://releases.ubuntu.com/18.04/>`_
-    
-*2. CREATE VM*
+
+
+Create Ubuntu Virtual Machine
+---------------------------------
 
 In Virtual box, click the create new VM button, and make sure the bellow requirments are set before completing. 
 
@@ -27,15 +29,18 @@ In Virtual box, click the create new VM button, and make sure the bellow requirm
 .. image:: vmcreat.gif
 	:width: 500
 	:alt: Directory Layout
+	:align: center
     
 
-*3. MODIFY SETTINGS*
+Modify Virtual Machine Settings
+------------------------------------
 
 	* Navigate to settings/system/processor. Change the CPU amount from 1 CPU to 2-4
 	
 	.. image:: procesors.gif
 		:width: 500
 		:alt: Directory Layout	
+		:align: center
 
 
 	* Navigate to settings/Network and change from NAT to Bridgeed Adapter to set up internet
@@ -43,6 +48,7 @@ In Virtual box, click the create new VM button, and make sure the bellow requirm
 	.. image:: adaptor.gif
 		:width: 500
 		:alt: Directory Layout	
+		:align: center
 
 
 	* Navigate to settings/Storage and add in the virtual disk downloaded previously
@@ -50,8 +56,11 @@ In Virtual box, click the create new VM button, and make sure the bellow requirm
 	.. image:: disk.gif
 		:width: 500
 		:alt: Directory Layout	
+		:align: center
 
-*4. START*
+
+Start Ubuntu VM
+-------------------
 
     Start your VM by double clicking on navigation bar, or by pressing start button. When prompted, procead to "Install Ubuntu" option and compleat configuration.
 
@@ -59,6 +68,7 @@ In Virtual box, click the create new VM button, and make sure the bellow requirm
 .. image:: install.gif
 	:width: 500
 	:alt: Directory Layout	
+	:align: center
 
 
 
