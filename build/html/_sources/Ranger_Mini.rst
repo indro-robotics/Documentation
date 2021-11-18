@@ -16,6 +16,7 @@ Ranger Mini is an AgileX Robot with new omni-directional UGV created by AgileX R
 .. image:: RangerM.png
 	:width: 500
 	:alt: Directory Layout
+	:align: center
 
 
 Visit `AgileX <https://www.agilex.ai/index/product/id/9?lang=en-us>`_ for more information on the Ranger Mini Robot.

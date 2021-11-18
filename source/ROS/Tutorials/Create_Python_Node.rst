@@ -8,9 +8,7 @@ ROS Node
 
 **WHAT IS A NODE**
 
-A node is a process that performs computation. A node is an executable program inside the Robot. There are many nodes inside one robot, and they all communicate with eachother. Nodes are an extreamly useful functionality of ROS as they reduce code complexity for the developer.
-
-A package as discussed, is an independent unit inside of a robot. A package is empty however, and you need to create nodes inside packages before anything can happen. For example, if a robot has a camera package, where the package handles the camera operations as an independent unit from the others, you can create nodes inside this package. The camera package needs a driver node, as well as an image processing node. The nodes communicate using ROS communication functionalities. You can also have nodes from seperate packages communicate with eachother as well. For example, the image processing node may send data to a motion planning package node.
+A node is a process that performs computation. For example, a node could control the motion plan, or the camera driver of a robot. There exists many different nodes inside one robot, each with a unique task and able to communicate with eachother.
 
 **CREATE PYTHON NODE**
 
@@ -37,9 +35,9 @@ You can now open up your new python file in any text editor you want, and use py
 
 
 
-The node is initialized with rospy.init_node("name of node"). The commented sections of this template are optional aspects of a node, depending on how you'd like it to function. To keep the node active, enter into a while loop before shutting down. 
+The node is initialized with **rospy.init_node("name of node")**. The while loop keeps the node active.
 
-Before executing your node, you must run the ros master in another script. to run this, type roscore and have it running on the side. Then return to your terminal and run your python file with 'python my_first_node.py'.
+Before executing your node, you must run the ros master in another terminal. Open up a new terminal and type 'roscore'. Then return to your terminal and run your python file with 'python my_first_node.py'. You can use 'roslist' command in another terminal to view active nodes.
 
 .. image:: nodeTerminal.gif
 	:width: 700

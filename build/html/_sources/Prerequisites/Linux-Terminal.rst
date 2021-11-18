@@ -6,7 +6,8 @@
 Terminal
 ==============
 
-**LINUX BASICS**
+Linux Commands
+----------------
 
 Navigating the Linux terminal is an essential requirment when using software such as ROS and Gazebo. Since most development is done using the terminal, it is important to know and understand the following basic commands. 
 
@@ -14,6 +15,7 @@ Navigating the Linux terminal is an essential requirment when using software suc
 .. list-table:: Basic Linux Commands
    :widths: 25 75
    :header-rows: 1
+   :align: center
 
    * - Command
      - Description
@@ -33,13 +35,16 @@ Navigating the Linux terminal is an essential requirment when using software suc
      - make a file executable
 
 
-**INSTALLS**
+
+Linux Environment Packages
+-------------------------------
 
 There are also essential installations/updates that anyone following the guide would want to consider installing.
 
 .. list-table:: Install/update the following
    :widths: 25 75
    :header-rows: 1
+   :align: center
 
    * - Install
      - Description
@@ -50,14 +55,16 @@ There are also essential installations/updates that anyone following the guide w
    * - sudo apt install vim
      - vim is an in terminal text editor
      
-     
-**VIM**
+
+VIM
+-------
 
 Vim is another consideration for people working in the terminal. Although less user friendly then other text editors, it can be a convenient tool other than working with an editor. For more information on Vim we strongly recomend looking at the online documentation. Below are a list of some (but not all) of the most important commands.
 
 .. list-table:: Vim Commands
    :widths: 25 75
    :header-rows: 1
+   :align: center
 
    * - Arrow keys
      - To move up and down in the script, use arrow keys

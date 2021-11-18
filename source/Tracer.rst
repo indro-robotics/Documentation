@@ -17,6 +17,7 @@ TRACER is an AgileX robot with a two-wheel differential AGV. It has unique advan
 .. image:: Tracer.png
 	:width: 500
 	:alt: Directory Layout
+	:align: center
 
 
 Visit `AgileX <https://www.agilex.ai/index/product/id/9?lang=en-us>`_ for more information on the Tracer Robot.

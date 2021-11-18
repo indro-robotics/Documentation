@@ -46,6 +46,7 @@ The command should open a seperate window containing a blue background with a tu
 .. image:: turtlesimopen.png
 	:width: 200
 	:alt: Directory Layout
+	:align: center
 
 We are going to now start a new node that controls the movment of this turtle
 
@@ -60,7 +61,7 @@ This node controls the key movement of the turtle. Press the arrow keys to direc
 .. image:: turtle.gif
 	:width: 200
 	:alt: Directory Layout
-	
+	:align: center	
 
 **5.** Open up a seperate terminal and see the active nodes in session
 
@@ -73,6 +74,7 @@ This command should open up a list showing you the active nodes. In this case we
 .. image:: rosnode_list.png
 	:width: 500
 	:alt: Directory Layout
+	:align: center
 
 **6.** If you would like to see information on a specific node, use the rosnode info command
 
@@ -94,6 +96,7 @@ You should be able to see the two active nodes running, teleop_turtle and turtle
 .. image:: rqtG.png
 	:width: 400
 	:alt: Directory Layout
+	:align: center
 
 **8.** View the active topics
 
@@ -106,7 +109,7 @@ Take note of turtle1/cmd_vel, turtle1/color_sensor, and turtl1/pose topics liste
 .. image:: topiclist.png
 	:width: 400
 	:alt: Directory Layout
-
+	:align: center
 
 **9.** Find info on a topic
 
@@ -119,6 +122,7 @@ Executing this command, we can see the publisher and subscriber information on t
 .. image:: topicinfo.png
 	:width: 350
 	:alt: Directory Layout
+	:align: center
 
 The subscriber is the turtlesim node, and the publisher is the teleop_turtle. This means that the turtlesim node waits for information from the teleop_turtle on the topic cmd_vel. In other words. The GUI waits for a command from the keyboard before moving the turtle on the GUI.
 

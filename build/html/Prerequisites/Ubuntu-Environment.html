@@ -46,13 +46,35 @@
               <p class="caption" role="heading"><span class="caption-text">Software</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../Prerequisites.html"><strong>Prerequisites</strong></a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Ubuntu Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Linux-Terminal.html">Terminal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Python.html">Python</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Ubuntu Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#environment-downloads">Environment Downloads</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-ubuntu-virtual-machine">Create Ubuntu Virtual Machine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modify-virtual-machine-settings">Modify Virtual Machine Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#start-ubuntu-vm">Start Ubuntu VM</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Linux-Terminal.html">Terminal</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Linux-Terminal.html#linux-commands">Linux Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Linux-Terminal.html#linux-environment-packages">Linux Environment Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Linux-Terminal.html#vim">VIM</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Python.html">Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Python.html#install-python3">Install Python3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Python.html#create-python3-file">Create Python3 File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Python.html#execute-python3-file">Execute Python3 File</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../ROS.html"><strong>ROS</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../ROS/Installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ROS/Installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Installation.html#system-requirments">System Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Installation.html#download-ros">Download ROS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Installation.html#optional-ros-packages">Optional ROS Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Installation.html#test-ros-download">Test ROS Download</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../ROS/Core-Concepts.html">Core Concepts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ROS/Tutorials.html"><strong>ROS Elements</strong></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../ROS/Tutorials/Create_Catkin.html">Catkin Workspace</a></li>
@@ -70,10 +92,14 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Gazebo.html"><strong>Gazebo</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Gazebo/Installation.html">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Gazebo/Guide.html">Navigation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Gazebo/Installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Installation.html#system-requirments">System Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Installation.html#download-gazebo11">Download Gazebo11</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Installation.html#run-gazebo">Run Gazebo</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../Gazebo/Tutorial.html"><strong>Tutorial</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Tutorial/Model.html"><strong>Make a Model</strong></a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Tutorial/Model.html">Gazebo Basics</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -85,7 +111,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../Requirments.html"><strong>Requirments</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Hunter.html"><strong>Hunter</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Hunter/GazeboHuntSim.html">Gazebo Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Hunter/GazeboHuntSim.html">Launch Gazebo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Hunter/GazeboHuntSim.html#hunter-simulation">Hunter Simulation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Limo.html"><strong>Limo</strong></a><ul>
@@ -135,16 +164,18 @@
 </div>
 <div class="section" id="ubuntu-installation">
 <h1>Ubuntu Installation<a class="headerlink" href="#ubuntu-installation" title="Permalink to this headline"></a></h1>
-<p>ROS Noetic requirs an Ubuntu 20.04. Ros Melodic requires ubuntu 18.04. An easy way to do this is to create a virtual machine. Download the Virtualbox app as well as one of the desktops 20.04 or 18.04 depending on which ROS version you want. We recomend Noetic for personal use as it is the most recent and up to date, while also giving users access to the most recent version of Gazebo. However ROS Melodic is required for our AgileX gazebo simulations.</p>
-<p><em>1. DOWNLOAD</em></p>
+<p>ROS Noetic requirs an Ubuntu 20.04. An easy way to do this is to create a virtual machine. Download the Virtualbox app as well as the 20.04 ubuntu desktop.</p>
+<div class="section" id="environment-downloads">
+<h2>Environment Downloads<a class="headerlink" href="#environment-downloads" title="Permalink to this headline"></a></h2>
 <blockquote>
 <div><ul class="simple">
 <li><p><a class="reference external" href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a></p></li>
 <li><p><a class="reference external" href="https://ubuntu.com/download/desktop">Ubuntu Desktop 20.04</a></p></li>
-<li><p><a class="reference external" href="https://releases.ubuntu.com/18.04/">Ubuntu Desktop 18.04</a></p></li>
 </ul>
 </div></blockquote>
-<p><em>2. CREATE VM</em></p>
+</div>
+<div class="section" id="create-ubuntu-virtual-machine">
+<h2>Create Ubuntu Virtual Machine<a class="headerlink" href="#create-ubuntu-virtual-machine" title="Permalink to this headline"></a></h2>
 <p>In Virtual box, click the create new VM button, and make sure the bellow requirments are set before completing.</p>
 <blockquote>
 <div><ul class="simple">
@@ -155,27 +186,32 @@
 <li><p>25GB-50GB</p></li>
 </ul>
 </div></blockquote>
-<a class="reference internal image-reference" href="../_images/vmcreat.gif"><img alt="Directory Layout" src="../_images/vmcreat.gif" style="width: 500px;" /></a>
-<p><em>3. MODIFY SETTINGS</em></p>
+<a class="reference internal image-reference" href="../_images/vmcreat.gif"><img alt="Directory Layout" class="align-center" src="../_images/vmcreat.gif" style="width: 500px;" /></a>
+</div>
+<div class="section" id="modify-virtual-machine-settings">
+<h2>Modify Virtual Machine Settings<a class="headerlink" href="#modify-virtual-machine-settings" title="Permalink to this headline"></a></h2>
 <blockquote>
 <div><ul class="simple">
 <li><p>Navigate to settings/system/processor. Change the CPU amount from 1 CPU to 2-4</p></li>
 </ul>
-<a class="reference internal image-reference" href="../_images/procesors.gif"><img alt="Directory Layout" src="../_images/procesors.gif" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/procesors.gif"><img alt="Directory Layout" class="align-center" src="../_images/procesors.gif" style="width: 500px;" /></a>
 <ul class="simple">
 <li><p>Navigate to settings/Network and change from NAT to Bridgeed Adapter to set up internet</p></li>
 </ul>
-<a class="reference internal image-reference" href="../_images/adaptor.gif"><img alt="Directory Layout" src="../_images/adaptor.gif" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/adaptor.gif"><img alt="Directory Layout" class="align-center" src="../_images/adaptor.gif" style="width: 500px;" /></a>
 <ul class="simple">
 <li><p>Navigate to settings/Storage and add in the virtual disk downloaded previously</p></li>
 </ul>
-<a class="reference internal image-reference" href="../_images/disk.gif"><img alt="Directory Layout" src="../_images/disk.gif" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/disk.gif"><img alt="Directory Layout" class="align-center" src="../_images/disk.gif" style="width: 500px;" /></a>
 </div></blockquote>
-<p><em>4. START</em></p>
+</div>
+<div class="section" id="start-ubuntu-vm">
+<h2>Start Ubuntu VM<a class="headerlink" href="#start-ubuntu-vm" title="Permalink to this headline"></a></h2>
 <blockquote>
 <div><p>Start your VM by double clicking on navigation bar, or by pressing start button. When prompted, procead to “Install Ubuntu” option and compleat configuration.</p>
 </div></blockquote>
-<a class="reference internal image-reference" href="../_images/install.gif"><img alt="Directory Layout" src="../_images/install.gif" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/install.gif"><img alt="Directory Layout" class="align-center" src="../_images/install.gif" style="width: 500px;" /></a>
+</div>
 </div>
 
 

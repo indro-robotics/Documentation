@@ -23,7 +23,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Navigation" href="Guide.html" />
+    <link rel="next" title="Tutorial" href="Tutorial.html" />
     <link rel="prev" title="Gazebo" href="../Gazebo.html" /> 
 </head>
 
@@ -46,13 +46,35 @@
               <p class="caption" role="heading"><span class="caption-text">Software</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Prerequisites.html"><strong>Prerequisites</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html">Ubuntu Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html">Terminal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html">Ubuntu Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html#environment-downloads">Environment Downloads</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html#create-ubuntu-virtual-machine">Create Ubuntu Virtual Machine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html#modify-virtual-machine-settings">Modify Virtual Machine Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html#start-ubuntu-vm">Start Ubuntu VM</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html">Terminal</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html#linux-commands">Linux Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html#linux-environment-packages">Linux Environment Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html#vim">VIM</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Python.html">Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Python.html#install-python3">Install Python3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Python.html#create-python3-file">Create Python3 File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Python.html#execute-python3-file">Execute Python3 File</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../ROS.html"><strong>ROS</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../ROS/Installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ROS/Installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Installation.html#system-requirments">System Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Installation.html#download-ros">Download ROS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Installation.html#optional-ros-packages">Optional ROS Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Installation.html#test-ros-download">Test ROS Download</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../ROS/Core-Concepts.html">Core Concepts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ROS/Tutorials.html"><strong>ROS Elements</strong></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../ROS/Tutorials/Create_Catkin.html">Catkin Workspace</a></li>
@@ -70,10 +92,14 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../Gazebo.html"><strong>Gazebo</strong></a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Guide.html">Navigation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#system-requirments">System Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#download-gazebo11">Download Gazebo11</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-gazebo">Run Gazebo</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="Tutorial.html"><strong>Tutorial</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Tutorial/Model.html"><strong>Make a Model</strong></a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="Tutorial/Model.html">Gazebo Basics</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -85,7 +111,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../Requirments.html"><strong>Requirments</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Hunter.html"><strong>Hunter</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Hunter/GazeboHuntSim.html">Gazebo Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Hunter/GazeboHuntSim.html">Launch Gazebo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Hunter/GazeboHuntSim.html#hunter-simulation">Hunter Simulation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Limo.html"><strong>Limo</strong></a><ul>
@@ -136,32 +165,25 @@
 <div class="section" id="installation">
 <h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline"></a></h1>
 <p>Gazebo is a free 3D simulator able to show real world models of robots in complex environments. Gazebo requires a Linux environment. In these tutorials we will be using Gazebo 11 paired with ROS Noetic. You can download and see more information on Gazebo <a class="reference external" href="http://gazebosim.org/">here</a>.</p>
-<ol class="arabic simple">
-<li><p>To install Gazebo9, open a terminal and enter</p></li>
-</ol>
-<div class="literal-block-wrapper docutils container" id="id1">
-<div class="code-block-caption"><span class="caption-text">Install</span><a class="headerlink" href="#id1" title="Permalink to this code"></a></div>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>sudo apt-get install gazebo9
-</pre></div>
+<div class="section" id="system-requirments">
+<h2>System Requirments<a class="headerlink" href="#system-requirments" title="Permalink to this headline"></a></h2>
+<p>We will be using Ubuntu 20.04 / ROS Noetic / Python 3. For information on how to set up Ubuntu environment, and informatin on Linux Terminal/python 3, visit Prerequisites page.</p>
 </div>
-</div>
-<p>Alternativly you can install Gazebo11 with the command</p>
-<div class="literal-block-wrapper docutils container" id="id2">
-<div class="code-block-caption"><span class="caption-text">Install</span><a class="headerlink" href="#id2" title="Permalink to this code"></a></div>
+<div class="section" id="download-gazebo11">
+<h2>Download Gazebo11<a class="headerlink" href="#download-gazebo11" title="Permalink to this headline"></a></h2>
+<p>Open a terminal execute the following command to install Gazebo11</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>sudo apt-get install gazebo11
 </pre></div>
 </div>
 </div>
-<ol class="arabic simple" start="3">
-<li><p>To run Gazebo, open a terminal and enter</p></li>
-</ol>
-<div class="literal-block-wrapper docutils container" id="id3">
-<div class="code-block-caption"><span class="caption-text">Run</span><a class="headerlink" href="#id3" title="Permalink to this code"></a></div>
+<div class="section" id="run-gazebo">
+<h2>Run Gazebo<a class="headerlink" href="#run-gazebo" title="Permalink to this headline"></a></h2>
+<p>Open a terminal and enter</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>gazebo
 </pre></div>
 </div>
-</div>
 <p>For more instructions check out the <a class="reference external" href="http://gazebosim.org/tutorials?cat=guided_b&amp;tut=guided_b1/">gazebo website</a> and the in depth <a class="reference external" href="http://gazebosim.org/tutorials?cat=guided_b&amp;tut=guided_b1/">installation instructions</a></p>
+</div>
 </div>
 
 
@@ -169,7 +191,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../Gazebo.html" class="btn btn-neutral float-left" title="Gazebo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Guide.html" class="btn btn-neutral float-right" title="Navigation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Tutorial.html" class="btn btn-neutral float-right" title="Tutorial" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

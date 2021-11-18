@@ -3,7 +3,7 @@
    :titlesonly:
 
 
-Gazebo Simulation
+Launch Gazebo
 =============================
 
 
@@ -29,25 +29,32 @@ Gazebo Simulation
 A simulation environment with the hunter robot should appear
 
 .. image:: hunter.png
-	:width: 600
+	:width: 300
 	:alt: Directory Layout
+	:align: center
 
 
 4. Drive Hunter
 
-Locate the rqt_robot_steering_RobotSteering window
+Use the Ackermann_steering_controller window to control the movement of the robot. The vertical bar acts as the forward, backwards movement needed to boost the robot into motion, while the horizontal bar controls the direction the robot accelerates in.
 
 .. image:: steering.png
-	:width: 600
+	:width: 300
 	:alt: Directory Layout
+	:align: center
 
-This window will allow you to control the movement of the robot using ackermann_steering_controller. The vertical bar acts as the forward, backwards movement needed to boost the robot into motion, while the horizontal bar controls the direction the robot accelerates in. Zoom in on the Hunter and play around with the controlls!
 
+|
+
+Hunter Simulation
+--------------------
 
 .. raw:: html
 
-	<video controls src="hunter.mp4"></video>
-
+	<center>
+		<video controls src="../_static/hunter.mp4" width="600"> </video>
+	</center>
+	
 
 
 	

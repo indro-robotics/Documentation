@@ -17,18 +17,10 @@ Hunter is an AgileX Robot designed for Low-speed Autonomous Driving scenarios. I
 .. image:: Hunter.png
 	:width: 500
 	:alt: Directory Layout
+	:align: center
 
 
 Visit `AgileX <https://www.agilex.ai/index/product/id/9?lang=en-us>`_ for more information on the Hunter Robot.
-
-
-
-.. video:: test.mkv
-	:width: 500
-	:height: 300
-	:autoplay:
-	:nocontrols:
-
 
 
 

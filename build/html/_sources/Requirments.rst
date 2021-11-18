@@ -3,41 +3,41 @@
 **Requirments**
 =================
 
-**AgileX simulations require Ubuntu 18.04 + ROS Melodic desktop full**
+You need to have **Gazebo** and **ROS** downloaded before executing any of the commands. Visit our ROS and Gazebo pages for information on how to install.
 
-There are a few required installations for use of the AgileX products in Gazebo. Please execute the following code blocks in a new Terminal window.
+Please execute the following code blocks in a new Terminal window to simulate these products
 
-You also need to have **Gazebo** and **ROS** downloaded.
 
 .. code-block:: text
 	:caption: ros-control function package:
 
-	sudo apt-get install ros-melodic-ros-control
+	sudo apt-get install ros-noetic-ros-control
 	
 
 .. code-block:: text
 	:caption: ros-controllers function package:
 
-	sudo apt-get install ros-melodic-ros-controllers
+	sudo apt-get install ros-noetic-ros-controllers
 
 
 .. code-block:: text
 	:caption: gazebo-ros function package:
 
-	sudo apt-get install ros-melodic-gazebo-ros
+	sudo apt-get install ros-noetic-gazebo-ros
 
 
 .. code-block:: text
 	:caption: gazebo-ros-control function package:
 
-	sudo apt-get install ros-melodic-gazebo-ros-control
+	sudo apt-get install ros-noetic-gazebo-ros-control
 
 
 .. code-block:: text
 	:caption: rqt-robot-steering plug-in:
 
-	sudo apt-get install ros-melodic-rqt-robot-steering 
+	sudo apt-get install ros-noetic-rqt-robot-steering 
 
+|
 
 **AgileX Workspace**
 
