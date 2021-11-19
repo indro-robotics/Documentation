@@ -29,17 +29,17 @@ Launch Gazebo
 A simulation environment with the hunter robot should appear
 
 .. image:: hunter.png
-	:width: 300
+	:width: 400
 	:alt: Directory Layout
 	:align: center
 
 
 4. Drive Hunter
 
-Use the Ackermann_steering_controller window to control the movement of the robot. The vertical bar acts as the forward, backwards movement needed to boost the robot into motion, while the horizontal bar controls the direction the robot accelerates in.
+Use the Ackerman_steering_controller window to control the movement of the robot. The vertical bar acts as the forward, backwards movement needed to boost the robot into motion, while the horizontal bar controls the direction the robot accelerates in.
 
 .. image:: steering.png
-	:width: 300
+	:width: 400
 	:alt: Directory Layout
 	:align: center
 

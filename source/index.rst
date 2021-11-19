@@ -21,6 +21,7 @@ Robot Documentation
    Hunter
    Limo
    Scout
+   ScoutMini
    Ranger_Mini
    Tracer
    

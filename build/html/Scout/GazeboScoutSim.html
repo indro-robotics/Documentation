@@ -23,7 +23,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Ranger" href="../Ranger_Mini.html" />
+    <link rel="next" title="Scout Mini" href="../ScoutMini.html" />
     <link rel="prev" title="Scout" href="../Scout.html" /> 
 </head>
 
@@ -99,9 +99,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Gazebo/Tutorial.html"><strong>Tutorial</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Tutorial/Model.html">Gazebo Basics</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Tutorial/Model.html">Gazebo Basics</a></li>
 </ul>
 </li>
 </ul>
@@ -118,19 +116,38 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Limo.html"><strong>Limo</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Limo/GazeboLimoSim.html">Gazebo Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Limo/GazeboLimoSim.html">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Limo/GazeboLimoSim.html#limo-simulation">Limo Simulation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../Scout.html"><strong>Scout</strong></a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Gazebo Simulation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#scout-simulation">Scout Simulation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ScoutMini.html"><strong>Scout Mini</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ScoutMini/GazeboScoutMiniSim.html">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ScoutMini/GazeboScoutMiniSim.html#scout-mini-simulation">Scout Mini Simulation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Ranger_Mini.html"><strong>Ranger</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Ranger_Mini/GazeboRangSim.html">Gazebo Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Ranger_Mini/GazeboRangSim.html">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Ranger_Mini/GazeboRangSim.html#ranger-simulation">Ranger Simulation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Tracer.html"><strong>Tracer</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Tracer/GazeboTraceSim.html">Gazebo Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Tracer/GazeboTraceSim.html">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Tracer/GazeboTraceSim.html#tracer-simulation">Tracer Simulation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -179,9 +196,29 @@
 <ol class="arabic simple" start="3">
 <li><p>Simulate</p></li>
 </ol>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>roslaunch scout_description display_scout_v2.launch
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>roslaunch scout_gazebo_sim scout_empty_world.launch
 </pre></div>
 </div>
+<p>A Gazebo simulation environment with the Scout robot should appear</p>
+<a class="reference internal image-reference" href="../_images/scout.png"><img alt="Directory Layout" class="align-center" src="../_images/scout.png" style="width: 500px;" /></a>
+<ol class="arabic simple" start="4">
+<li><p>Open a new tab in terminal and run the keyboard controller</p></li>
+</ol>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+</pre></div>
+</div>
+<p>Use the terminal with the teleop_twist_keyboard controller to move the robot. The controls are listed as ‘u’, ‘i’,’o’, ‘j’, ‘k’, ‘l’, ‘m’, ‘,’, and ‘.’ on the keyboard.</p>
+<a class="reference internal image-reference" href="../_images/teleop1.png"><img alt="Directory Layout" class="align-center" src="../_images/teleop1.png" style="width: 500px;" /></a>
+<ol class="arabic simple" start="5">
+<li><p>Drive the Scout</p></li>
+</ol>
+<p>Have the terminal with the teleop_twist_keyboard.py infront of the Gazebo environment. The controller needs to be the active window. Use the Moving around keys to control the robot</p>
+<a class="reference internal image-reference" href="../_images/scoutSim.png"><img alt="Directory Layout" class="align-center" src="../_images/scoutSim.png" style="width: 500px;" /></a>
+<div class="section" id="scout-simulation">
+<h2>Scout Simulation<a class="headerlink" href="#scout-simulation" title="Permalink to this headline"></a></h2>
+<center>
+        <video controls src="../_static/Scout.mp4" width="600"> </video>
+</center></div>
 </div>
 
 
@@ -189,7 +226,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../Scout.html" class="btn btn-neutral float-left" title="Scout" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../Ranger_Mini.html" class="btn btn-neutral float-right" title="Ranger" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../ScoutMini.html" class="btn btn-neutral float-right" title="Scout Mini" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

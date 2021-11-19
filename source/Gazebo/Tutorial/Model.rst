@@ -1,12 +1,9 @@
-
+.. toctree::
+   :hidden:
+   :titlesonly:
 
 Gazebo Basics
 =============================
-
-.. toctree::
-   :hidden:
-   :glob:
-
 
 
 1. Create a model directory:
@@ -188,10 +185,12 @@ Gazebo Basics
 9. Click on the dots to the right of the screen and drag them to the left. Under 'Force' tab, increase force applied to each joint to about 0.1N-m
 
 
+
+
 .. raw:: html
 
 	<center>
-		<video controls src="../_static/gazebo.mp4" width="600"> </video>
+		<video controls src="../_static/gazeboSim1.mp4" width="600"> </video>
 	</center>
 	
 
