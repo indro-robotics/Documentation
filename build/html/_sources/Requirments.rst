@@ -29,13 +29,19 @@ Please execute the following code blocks in a new Terminal window to simulate th
 .. code-block:: text
 	:caption: gazebo-ros-control function package:
 
-	sudo apt-get install ros-noetic-gazebo-ros-control
+	sudo apt-get install ros-noetic-gazebo-ros-control..
 
 
 .. code-block:: text
 	:caption: rqt-robot-steering plug-in:
 
 	sudo apt-get install ros-noetic-rqt-robot-steering 
+
+.. code-block:: text
+	:caption: keyboard controller:
+
+	sudo apt-get install ros-melodic-teleop-twist-keyboard 
+
 
 |
 

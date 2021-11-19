@@ -98,9 +98,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Gazebo/Tutorial.html"><strong>Tutorial</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Tutorial/Model.html">Gazebo Basics</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Tutorial/Model.html">Gazebo Basics</a></li>
 </ul>
 </li>
 </ul>
@@ -117,19 +115,38 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Limo.html"><strong>Limo</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Limo/GazeboLimoSim.html">Gazebo Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Limo/GazeboLimoSim.html">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Limo/GazeboLimoSim.html#limo-simulation">Limo Simulation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Scout.html"><strong>Scout</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Scout/GazeboScoutSim.html">Gazebo Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Scout/GazeboScoutSim.html">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Scout/GazeboScoutSim.html#scout-simulation">Scout Simulation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ScoutMini.html"><strong>Scout Mini</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ScoutMini/GazeboScoutMiniSim.html">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ScoutMini/GazeboScoutMiniSim.html#scout-mini-simulation">Scout Mini Simulation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Ranger_Mini.html"><strong>Ranger</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Ranger_Mini/GazeboRangSim.html">Gazebo Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Ranger_Mini/GazeboRangSim.html">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Ranger_Mini/GazeboRangSim.html#ranger-simulation">Ranger Simulation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../Tracer.html"><strong>Tracer</strong></a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Gazebo Simulation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tracer-simulation">Tracer Simulation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -178,9 +195,29 @@
 <ol class="arabic simple" start="3">
 <li><p>Simulate</p></li>
 </ol>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>roslaunch hunter2_gazebo hunter2_gazebo.launch
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>roslaunch tracer_gazebo_sim tracer_playpen.launch
 </pre></div>
 </div>
+<p>A Gazebo simulation environment with the Tracer robot should appear</p>
+<a class="reference internal image-reference" href="../_images/tracer.png"><img alt="Directory Layout" class="align-center" src="../_images/tracer.png" style="width: 500px;" /></a>
+<ol class="arabic simple" start="4">
+<li><p>Open a new tab in terminal and run the keyboard controller</p></li>
+</ol>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+</pre></div>
+</div>
+<p>Use the terminal with the teleop_twist_keyboard controller to move the robot. The controls are listed as ‘u’, ‘i’,’o’, ‘j’, ‘k’, ‘l’, ‘m’, ‘,’, and ‘.’ on the keyboard.</p>
+<a class="reference internal image-reference" href="../_images/teleop3.png"><img alt="Directory Layout" class="align-center" src="../_images/teleop3.png" style="width: 500px;" /></a>
+<ol class="arabic simple" start="5">
+<li><p>Drive the Tracer</p></li>
+</ol>
+<p>Have the terminal with the teleop_twist_keyboard.py infront of the Gazebo environment. The controller needs to be the active window. Use the Moving around keys to control the robot</p>
+<a class="reference internal image-reference" href="../_images/tracerSim.png"><img alt="Directory Layout" class="align-center" src="../_images/tracerSim.png" style="width: 500px;" /></a>
+<div class="section" id="tracer-simulation">
+<h2>Tracer Simulation<a class="headerlink" href="#tracer-simulation" title="Permalink to this headline"></a></h2>
+<center>
+        <video controls src="../_static/Tracer.mp4" width="600"> </video>
+</center></div>
 </div>
 
 

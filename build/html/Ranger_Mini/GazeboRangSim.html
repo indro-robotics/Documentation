@@ -99,9 +99,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Gazebo/Tutorial.html"><strong>Tutorial</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Tutorial/Model.html">Gazebo Basics</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Tutorial/Model.html">Gazebo Basics</a></li>
 </ul>
 </li>
 </ul>
@@ -118,19 +116,38 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Limo.html"><strong>Limo</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Limo/GazeboLimoSim.html">Gazebo Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Limo/GazeboLimoSim.html">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Limo/GazeboLimoSim.html#limo-simulation">Limo Simulation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Scout.html"><strong>Scout</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Scout/GazeboScoutSim.html">Gazebo Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Scout/GazeboScoutSim.html">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Scout/GazeboScoutSim.html#scout-simulation">Scout Simulation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ScoutMini.html"><strong>Scout Mini</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ScoutMini/GazeboScoutMiniSim.html">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ScoutMini/GazeboScoutMiniSim.html#scout-mini-simulation">Scout Mini Simulation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../Ranger_Mini.html"><strong>Ranger</strong></a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Gazebo Simulation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ranger-simulation">Ranger Simulation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Tracer.html"><strong>Tracer</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Tracer/GazeboTraceSim.html">Gazebo Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Tracer/GazeboTraceSim.html">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Tracer/GazeboTraceSim.html#tracer-simulation">Tracer Simulation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -179,9 +196,24 @@
 <ol class="arabic simple" start="3">
 <li><p>Simulate</p></li>
 </ol>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>roslaunch hunter2_gazebo hunter2_gazebo.launch
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>roslaunch ranger_mini_gazebo ranger_mini_empty_world.launch
 </pre></div>
 </div>
+<p>A Gazebo simulation environment with the Ranger robot should appear</p>
+<a class="reference internal image-reference" href="../_images/ranger.png"><img alt="Directory Layout" class="align-center" src="../_images/ranger.png" style="width: 500px;" /></a>
+<ol class="arabic simple" start="4">
+<li><p>Drive Ranger</p></li>
+</ol>
+<p>Use the Ackerman_steering_controller window to control the movement of the robot. The vertical bar acts as the forward, backwards movement needed to boost the robot into motion, while the horizontal bar controls the direction the robot accelerates in.</p>
+<a class="reference internal image-reference" href="../_images/steering1.png"><img alt="Directory Layout" class="align-center" src="../_images/steering1.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="ranger-simulation">
+<h2>Ranger Simulation<a class="headerlink" href="#ranger-simulation" title="Permalink to this headline"></a></h2>
+<center>
+        <video controls src="../_static/ranger.mp4" width="600"> </video>
+</center></div>
 </div>
 
 
