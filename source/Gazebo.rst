@@ -5,10 +5,13 @@
 
 .. toctree::
    :hidden:
+   :maxdepth: 1
    :glob:
 
+
    Gazebo/Installation
-   Gazebo/Tutorial
+   Gazebo/Model
+   Gazebo/Environment
 
 
 

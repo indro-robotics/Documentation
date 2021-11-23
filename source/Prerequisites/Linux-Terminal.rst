@@ -9,7 +9,7 @@ Terminal
 Linux Commands
 ----------------
 
-Navigating the Linux terminal is an essential requirment when using software such as ROS and Gazebo. Since most development is done using the terminal, it is important to know and understand the following basic commands. 
+Navigating the Linux terminal is an essential requirement when using software such as ROS and Gazebo. Since most development is done using the terminal, it is important to know and understand the following basic commands. 
 
 
 .. list-table:: Basic Linux Commands
@@ -59,7 +59,7 @@ There are also essential installations/updates that anyone following the guide w
 VIM
 -------
 
-Vim is another consideration for people working in the terminal. Although less user friendly then other text editors, it can be a convenient tool other than working with an editor. For more information on Vim we strongly recomend looking at the online documentation. Below are a list of some (but not all) of the most important commands.
+Vim is another consideration for people working in the terminal. Although less user friendly than other text editors, it can be a convenient tool other than working with an editor. For more information on Vim we strongly recommend looking at the online documentation. Below are a list of some (but not all) of the most important commands.
 
 .. list-table:: Vim Commands
    :widths: 25 75

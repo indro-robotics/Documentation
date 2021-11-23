@@ -49,8 +49,9 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Ubuntu Installation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#environment-downloads">Environment Downloads</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#create-ubuntu-virtual-machine">Create Ubuntu Virtual Machine</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#modify-virtual-machine-settings">Modify Virtual Machine Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#virtual-machine-settings">Virtual Machine Settings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#start-ubuntu-vm">Start Ubuntu VM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vm-modifications">VM Modifications</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="Linux-Terminal.html">Terminal</a><ul>
@@ -98,10 +99,8 @@
 <li class="toctree-l3"><a class="reference internal" href="../Gazebo/Installation.html#run-gazebo">Run Gazebo</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../Gazebo/Tutorial.html"><strong>Tutorial</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Tutorial/Model.html">Gazebo Basics</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="../Gazebo/Model.html">Creating a Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Gazebo/Environment.html">Creating an Environment</a></li>
 </ul>
 </li>
 </ul>
@@ -181,7 +180,7 @@
 </div>
 <div class="section" id="ubuntu-installation">
 <h1>Ubuntu Installation<a class="headerlink" href="#ubuntu-installation" title="Permalink to this headline"></a></h1>
-<p>ROS Noetic requirs an Ubuntu 20.04. An easy way to do this is to create a virtual machine. Download the Virtualbox app as well as the 20.04 ubuntu desktop.</p>
+<p>ROS Noetic requires an Ubuntu 20.04. An easy way to do this is to create a virtual machine. Download the Virtualbox app as well as the 20.04 ubuntu desktop.</p>
 <div class="section" id="environment-downloads">
 <h2>Environment Downloads<a class="headerlink" href="#environment-downloads" title="Permalink to this headline"></a></h2>
 <blockquote>
@@ -205,8 +204,8 @@
 </div></blockquote>
 <a class="reference internal image-reference" href="../_images/vmcreat.gif"><img alt="Directory Layout" class="align-center" src="../_images/vmcreat.gif" style="width: 500px;" /></a>
 </div>
-<div class="section" id="modify-virtual-machine-settings">
-<h2>Modify Virtual Machine Settings<a class="headerlink" href="#modify-virtual-machine-settings" title="Permalink to this headline"></a></h2>
+<div class="section" id="virtual-machine-settings">
+<h2>Virtual Machine Settings<a class="headerlink" href="#virtual-machine-settings" title="Permalink to this headline"></a></h2>
 <blockquote>
 <div><ul class="simple">
 <li><p>Navigate to settings/system/processor. Change the CPU amount from 1 CPU to 2-4</p></li>
@@ -225,9 +224,16 @@
 <div class="section" id="start-ubuntu-vm">
 <h2>Start Ubuntu VM<a class="headerlink" href="#start-ubuntu-vm" title="Permalink to this headline"></a></h2>
 <blockquote>
-<div><p>Start your VM by double clicking on navigation bar, or by pressing start button. When prompted, procead to “Install Ubuntu” option and compleat configuration.</p>
+<div><p>Start your VM by double clicking on navigation bar, or by pressing start button. When prompted, proceed to “Install Ubuntu” option and complete configuration.</p>
 </div></blockquote>
 <a class="reference internal image-reference" href="../_images/install.gif"><img alt="Directory Layout" class="align-center" src="../_images/install.gif" style="width: 500px;" /></a>
+</div>
+<div class="section" id="vm-modifications">
+<h2>VM Modifications<a class="headerlink" href="#vm-modifications" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>To include Copy and Paste options from your machine to the VM, select ‘Bidirectional’ option from Devices -&gt; Shared Clipboard</p></li>
+<li><p>To change size of VM window frame select ‘Insert Guest Additions CD image…’ from Devices</p></li>
+</ul>
 </div>
 </div>
 
