@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Construct a LiDAR &mdash; Indro Robotics Documentation  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+    <link rel="canonical" href="https://docs.ros.org/en/Gazebo/LiDAR.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Requirments" href="../Requirments.html" />
+    <link rel="prev" title="Creating an Environment" href="Environment.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #FFFFFF" >
+            <a href="../index.html">
+            <img src="../_static/indroLogo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Software</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Prerequisites.html"><strong>Prerequisites</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html">Ubuntu Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html#environment-downloads">Environment Downloads</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html#create-ubuntu-virtual-machine">Create Ubuntu Virtual Machine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html#virtual-machine-settings">Virtual Machine Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html#start-ubuntu-vm">Start Ubuntu VM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html#vm-modifications">VM Modifications</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html">Terminal</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html#linux-commands">Linux Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html#linux-environment-packages">Linux Environment Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html#vim">VIM</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Python.html">Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Python.html#install-python3">Install Python3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Python.html#create-python3-file">Create Python3 File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Python.html#execute-python3-file">Execute Python3 File</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ROS.html"><strong>ROS</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ROS/Installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Installation.html#system-requirments">System Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Installation.html#download-ros">Download ROS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Installation.html#optional-ros-packages">Optional ROS Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Installation.html#test-ros-download">Test ROS Download</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ROS/Core-Concepts.html">Core Concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ROS/Tutorials.html"><strong>ROS Elements</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Tutorials/Create_Catkin.html">Catkin Workspace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Tutorials/Create_Package.html">ROS Package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Tutorials/Create_Python_Node.html">ROS Node</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Tutorials/Publisher.html">Publisher</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Tutorials/Subscriber.html">Subscriber</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Tutorials/Service_Server.html">Service Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Tutorials/Client_server.html">Service Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Tutorials/Launch.html">Launch Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Tutorials/Command_Line_Tools.html">DEBUG commands</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ROS/Example.html">Tutorial/Demonstration</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../Gazebo.html"><strong>Gazebo</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Installation.html#system-requirments">System Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Installation.html#download-gazebo11">Download Gazebo11</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Installation.html#run-gazebo">Run Gazebo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Installation.html#navigate-gazebo">Navigate Gazebo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Model.html">Creating a Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Environment.html">Creating an Environment</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Construct a LiDAR</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">AgileX</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Requirments.html"><strong>Requirments</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Hunter.html"><strong>Hunter</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Hunter/GazeboHuntSim.html">Launch Gazebo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Hunter/GazeboHuntSim.html#hunter-simulation">Hunter Simulation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Limo.html"><strong>Limo</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Limo/GazeboLimoSim.html">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Limo/GazeboLimoSim.html#limo-simulation">Limo Simulation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Scout.html"><strong>Scout</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Scout/GazeboScoutSim.html">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Scout/GazeboScoutSim.html#scout-simulation">Scout Simulation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ScoutMini.html"><strong>Scout Mini</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ScoutMini/GazeboScoutMiniSim.html">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ScoutMini/GazeboScoutMiniSim.html#scout-mini-simulation">Scout Mini Simulation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Ranger_Mini.html"><strong>Ranger</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Ranger_Mini/GazeboRangSim.html">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Ranger_Mini/GazeboRangSim.html#ranger-simulation">Ranger Simulation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Tracer.html"><strong>Tracer</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Tracer/GazeboTraceSim.html">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Tracer/GazeboTraceSim.html#tracer-simulation">Tracer Simulation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #FFFFFF" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Indro Robotics Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../Gazebo.html"><strong>Gazebo</strong></a> &raquo;</li>
+      <li>Construct a LiDAR</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/EllaHayashiIndro/Documentation/blob/rolling/source/Gazebo/LiDAR.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="toctree-wrapper compound">
+</div>
+<div class="section" id="construct-a-lidar">
+<h1>Construct a LiDAR<a class="headerlink" href="#construct-a-lidar" title="Permalink to this headline"></a></h1>
+<p>Lidar is a method for determining ranges by targeting an object with a laser and measuring the time for the reflected light to return to the receiver. Useing math and algorithms, a robot can understand the distance of objects around it, and therefor learn how to navigate these objects in the real world.</p>
+<ol class="arabic simple">
+<li><p>Open a terminal and create a folder for the LiDAR model</p></li>
+</ol>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>mkdir GazeboProj
+cd GazeboProj
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Import code for model from GitHub</p></li>
+</ol>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>git init
+git clone https://github.com/EllaHayashiIndro/Lidar_Gazebo.git
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Enter Lidar Folder</p></li>
+</ol>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>cd Lidar_Gazebo
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Run the LiDAR world</p></li>
+</ol>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>gazebo lidar.world
+</pre></div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>View the Lidar working in Gazebo</p></li>
+</ol>
+<center>
+        <video controls src="../_static/lidar.mp4" width="600"> </video>
+</center><p>This tutorial is based on a tutorial by <a class="reference external" href="https://www.python.org/about/gettingstarted/">Gazebo</a></p>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Environment.html" class="btn btn-neutral float-left" title="Creating an Environment" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Requirments.html" class="btn btn-neutral float-right" title="Requirments" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Ella Hayashi.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
