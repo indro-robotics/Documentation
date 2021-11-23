@@ -4,7 +4,7 @@ Robot Documentation
 
 .. toctree::
    :caption: Software
-   :maxdepth: 2
+   :maxdepth: 1
    :hidden:
 
    Prerequisites
@@ -14,7 +14,7 @@ Robot Documentation
 
 .. toctree::
    :caption: AgileX
-   :maxdepth: 2
+   :maxdepth: 1
    :hidden:
    
    Requirments

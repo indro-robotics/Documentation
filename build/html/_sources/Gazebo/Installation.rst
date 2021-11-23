@@ -36,7 +36,28 @@ Open a terminal and enter
 	gazebo
 
 
+
+Navigate Gazebo
+------------------
+
+Navigate Gazebo with the mouse using the left click, center wheel and right click.
+
+
+.. image:: mouseGazebo.png
+	:width: 700
+	:alt: Directory Layout
+	:align: center
+
+
+
 For more instructions check out the `gazebo website <http://gazebosim.org/tutorials?cat=guided_b&tut=guided_b1/>`_ and the in depth `installation instructions <http://gazebosim.org/tutorials?cat=guided_b&tut=guided_b1/>`_ 
+
+
+
+
+
+
+
 
 
 

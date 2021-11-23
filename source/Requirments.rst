@@ -40,7 +40,7 @@ Please execute the following code blocks in a new Terminal window to simulate th
 .. code-block:: text
 	:caption: keyboard controller:
 
-	sudo apt-get install ros-melodic-teleop-twist-keyboard 
+	sudo apt-get install ros-noetic-teleop-twist-keyboard 
 
 
 |

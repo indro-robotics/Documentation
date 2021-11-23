@@ -6,7 +6,7 @@
 Ubuntu Installation
 =======================
 
-ROS Noetic requirs an Ubuntu 20.04. An easy way to do this is to create a virtual machine. Download the Virtualbox app as well as the 20.04 ubuntu desktop.
+ROS Noetic requires an Ubuntu 20.04. An easy way to do this is to create a virtual machine. Download the Virtualbox app as well as the 20.04 ubuntu desktop.
 
 Environment Downloads
 -----------------------
@@ -32,7 +32,7 @@ In Virtual box, click the create new VM button, and make sure the bellow requirm
 	:align: center
     
 
-Modify Virtual Machine Settings
+Virtual Machine Settings
 ------------------------------------
 
 	* Navigate to settings/system/processor. Change the CPU amount from 1 CPU to 2-4
@@ -62,13 +62,32 @@ Modify Virtual Machine Settings
 Start Ubuntu VM
 -------------------
 
-    Start your VM by double clicking on navigation bar, or by pressing start button. When prompted, procead to "Install Ubuntu" option and compleat configuration.
+    Start your VM by double clicking on navigation bar, or by pressing start button. When prompted, proceed to "Install Ubuntu" option and complete configuration.
 
 
 .. image:: install.gif
 	:width: 500
 	:alt: Directory Layout	
 	:align: center
+
+
+VM Modifications
+-------------------
+
+- To include Copy and Paste options from your machine to the VM, select 'Bidirectional' option from Devices -> Shared Clipboard
+- To change size of VM window frame select 'Insert Guest Additions CD image...' from Devices
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

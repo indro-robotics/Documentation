@@ -18,7 +18,7 @@ Instal Python3 with the following command in the Terminal
 
 	sudo apt install python3
 
-You should be able to see your newlly installed python by executing the following command.
+You should be able to see your newly installed python by executing the following command.
 
 .. code-block:: text
 
@@ -28,7 +28,7 @@ You should be able to see your newlly installed python by executing the followin
 Create Python3 File
 ----------------------------
 
-A simple way to create a new python file is to open up any text editor. Simply save the file in the wanted folder with a name, and followed by the .py extention. The computer will then recognize it as a python file. Other ways of creating a python file are through the terminal, using VIM or the touch command. These are slightly more complicated methods for beginners, so we sugest staying away from terminal file creation. 
+A simple way to create a new python file is to open up any text editor. Simply save the file in the wanted folder with a name, and followed by the .py extentson. The computer will then recognize it as a python file. Other ways of creating a python file are through the terminal, using VIM or the touch command. These are slightly more complicated methods for beginners, so we suggest staying away from terminal file creation. 
 
 
 
