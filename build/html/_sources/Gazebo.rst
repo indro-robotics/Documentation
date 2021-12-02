@@ -10,8 +10,7 @@
 
 
    Gazebo/Installation
-   Gazebo/Model
-   Gazebo/Environment
+   Gazebo/Basics
    Gazebo/LiDAR
 
 

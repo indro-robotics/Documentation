@@ -8,6 +8,7 @@
    :maxdepth: 1
    :glob:
 
+   Scout/about
    Scout/GazeboScoutSim
 
 
