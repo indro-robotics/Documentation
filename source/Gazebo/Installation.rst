@@ -24,7 +24,9 @@ Open a terminal execute the following command to install Gazebo11
 .. code-block:: text
 	
 	sudo apt-get install gazebo11
-	
+
+
+
 
 Run Gazebo
 -------------

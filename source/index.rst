@@ -17,7 +17,6 @@ Robot Documentation
    :maxdepth: 1
    :hidden:
    
-   Requirments
    Hunter
    Limo
    Scout
