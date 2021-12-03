@@ -11,7 +11,6 @@
 
    Gazebo/Installation
    Gazebo/Basics
-   Gazebo/LiDAR
 
 
 
