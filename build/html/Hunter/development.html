@@ -20,11 +20,10 @@
         <script src="../_static/doctools.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
+        <script src="../_static/js/custon.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Limo" href="../Limo.html" />
-    <link rel="prev" title="Gazebo Simulation" href="GazeboHuntSim.html" /> 
+    <link rel="search" title="Search" href="../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -105,12 +104,17 @@
 <li class="toctree-l3"><a class="reference internal" href="../Gazebo/Basics.html#creating-an-environment">Creating an Environment</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../Gazebo/d435Camera.html">RealSense d435 Camera Plugin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/d435Camera.html#requirments">Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/d435Camera.html#gazebo-simulation">Gazebo Simulation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">AgileX</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../Hunter.html"><strong>Hunter</strong></a><ul class="current">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Hunter.html"><strong>Hunter</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="about.html">About Hunter</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="about.html#battery">Battery</a></li>
 <li class="toctree-l3"><a class="reference internal" href="about.html#power-system">Power System</a></li>
@@ -127,10 +131,7 @@
 <li class="toctree-l3"><a class="reference internal" href="GazeboHuntSim.html#hunter-simulation">Hunter Simulation</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Hunter Development</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#convert-step-file-to-urdf">Convert Step file to URDF</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="purchas.html">Contact us / Hunter Quote</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Limo.html"><strong>Limo</strong></a><ul>
@@ -228,7 +229,6 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../Hunter.html"><strong>Hunter</strong></a> &raquo;</li>
       <li>Hunter Development</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/EllaHayashiIndro/Documentation/blob/rolling/source/Hunter/development.rst" class="fa fa-github"> Edit on GitHub</a>
@@ -243,40 +243,16 @@
 </div>
 <div class="section" id="hunter-development">
 <h1>Hunter Development<a class="headerlink" href="#hunter-development" title="Permalink to this headline"></a></h1>
-<div class="section" id="convert-step-file-to-urdf">
-<h2>Convert Step file to URDF<a class="headerlink" href="#convert-step-file-to-urdf" title="Permalink to this headline"></a></h2>
-<ol class="arabic simple">
-<li><p>download step file</p></li>
-<li><p>If you don’t already have FreeCad, download FreeCad to convert our step file</p></li>
-</ol>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>sudo apt-get install freecad
-sudo apt install python3-pyqt5
-</pre></div>
-</div>
-<ol class="arabic simple" start="3">
-<li><p>Open Hunter step file in FreeCad</p></li>
-</ol>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>freecad ~/Downloads/HDL32E_Outline_Model.STEP
-</pre></div>
-</div>
-<a class="reference internal image-reference" href="../_images/freecadHunter.png"><img alt="Directory Layout" class="align-center" src="../_images/freecadHunter.png" style="width: 500px;" /></a>
-<ol class="arabic simple" start="4">
-<li><p>Select your model in the left tab under Applications, then export to STL</p></li>
-</ol>
-<a class="reference internal image-reference" href="../_images/stlHunter.png"><img alt="Directory Layout" class="align-center" src="../_images/stlHunter.png" style="width: 500px;" /></a>
-<ol class="arabic simple" start="5">
-<li><p>Make your model SDF file</p></li>
-</ol>
+<p>The hunter robot has the ability to attach other utilities such as camera’s and lasers onto the unit.</p>
+<div class="section" id="attach-d435-camera">
+<h2>Attach d435 Camera<a class="headerlink" href="#attach-d435-camera" title="Permalink to this headline"></a></h2>
 </div>
 </div>
 
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="GazeboHuntSim.html" class="btn btn-neutral float-left" title="Gazebo Simulation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../Limo.html" class="btn btn-neutral float-right" title="Limo" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
+          <footer>
 
   <hr/>
 
