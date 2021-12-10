@@ -11,6 +11,7 @@
 
    Gazebo/Installation
    Gazebo/Basics
+   Gazebo/d435Camera
 
 
 

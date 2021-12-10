@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact us / Ranger Mini Quote &mdash; Indro Robotics Documentation  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+    <link rel="canonical" href="https://docs.ros.org/en/Ranger_Mini/purchas.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/js/custon.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Tracer" href="../Tracer.html" />
+    <link rel="prev" title="Gazebo Simulation" href="GazeboRangSim.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #FFFFFF" >
+            <a href="../index.html">
+            <img src="../_static/indroLogo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Software</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Prerequisites.html"><strong>Prerequisites</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html">Ubuntu Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html#environment-downloads">Environment Downloads</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html#create-ubuntu-virtual-machine">Create Ubuntu Virtual Machine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html#virtual-machine-settings">Virtual Machine Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html#start-ubuntu-vm">Start Ubuntu VM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Ubuntu-Environment.html#vm-modifications">VM Modifications</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html">Terminal</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html#linux-commands">Linux Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html#linux-environment-packages">Linux Environment Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Linux-Terminal.html#vim">VIM</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Prerequisites/Python.html">Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Python.html#install-python3">Install Python3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Python.html#create-python3-file">Create Python3 File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prerequisites/Python.html#execute-python3-file">Execute Python3 File</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ROS.html"><strong>ROS</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ROS/Installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Installation.html#system-requirments">System Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Installation.html#download-ros">Download ROS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Installation.html#optional-ros-packages">Optional ROS Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Installation.html#test-ros-download">Test ROS Download</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ROS/Core-Concepts.html">Core Concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ROS/Tutorials.html"><strong>ROS Elements</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Tutorials/Create_Catkin.html">Catkin Workspace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Tutorials/Create_Package.html">ROS Package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Tutorials/Create_Python_Node.html">ROS Node</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Tutorials/Publisher.html">Publisher</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Tutorials/Subscriber.html">Subscriber</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Tutorials/Service_Server.html">Service Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Tutorials/Client_server.html">Service Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Tutorials/Launch.html">Launch Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROS/Tutorials/Command_Line_Tools.html">DEBUG commands</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ROS/Example.html">Tutorial/Demonstration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Gazebo.html"><strong>Gazebo</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Gazebo/Installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Installation.html#system-requirments">System Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Installation.html#download-gazebo11">Download Gazebo11</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Installation.html#run-gazebo">Run Gazebo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Installation.html#navigate-gazebo">Navigate Gazebo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Gazebo/Basics.html">Gazebo Basics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Basics.html#creating-a-model">Creating a Model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/Basics.html#creating-an-environment">Creating an Environment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Gazebo/d435Camera.html">RealSense d435 Camera Plugin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/d435Camera.html#requirments">Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gazebo/d435Camera.html#gazebo-simulation">Gazebo Simulation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">AgileX</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Hunter.html"><strong>Hunter</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Hunter/about.html">About Hunter</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Hunter/about.html#battery">Battery</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Hunter/about.html#power-system">Power System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Hunter/about.html#safe-power-off-parking">Safe Power-off Parking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Hunter/about.html#development">Development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Hunter/about.html#specifications">Specifications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Hunter/about.html#video-of-hunter">Video of Hunter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Hunter/about.html#getting-started">Getting Started</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Hunter/GazeboHuntSim.html">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Hunter/GazeboHuntSim.html#requirments">Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Hunter/GazeboHuntSim.html#agilex-workspace">AgileX Workspace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Hunter/GazeboHuntSim.html#hunter-simulation">Hunter Simulation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Hunter/purchas.html">Contact us / Hunter Quote</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Limo.html"><strong>Limo</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Limo/about.html">About Limo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Limo/about.html#steering">Steering</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Limo/about.html#infared-camera">Infared Camera</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Limo/about.html#specifications">Specifications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Limo/about.html#video-of-limo">Video of Limo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Limo/GazeboLimoSim.html">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Limo/GazeboLimoSim.html#requirments">Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Limo/GazeboLimoSim.html#agilex-workspace">AgileX Workspace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Limo/GazeboLimoSim.html#limo-simulation">Limo Simulation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Limo/purchas.html">Contact us / Hunter Quote</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Scout.html"><strong>Scout</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Scout/about.html">About Scout 2.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Scout/about.html#structure">Structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Scout/about.html#cooling-system">Cooling System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Scout/about.html#supported-development">Supported Development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Scout/about.html#specifications">Specifications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Scout/about.html#video-of-scout">Video of Scout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Scout/about.html#getting-started">Getting Started</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Scout/GazeboScoutSim.html">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Scout/GazeboScoutSim.html#requirments">Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Scout/GazeboScoutSim.html#agilex-workspace">AgileX Workspace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Scout/GazeboScoutSim.html#scout-simulation">Scout Simulation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Scout/purchas.html">Contact us / Scout Quote</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ScoutMini.html"><strong>Scout Mini</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ScoutMini/about.html">About Scout Mini</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ScoutMini/about.html#specifications">Specifications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ScoutMini/about.html#video-of-scout-mini">Video of Scout Mini</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ScoutMini/about.html#getting-started">Getting Started</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ScoutMini/GazeboScoutMiniSim.html">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ScoutMini/GazeboScoutMiniSim.html#requirments">Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ScoutMini/GazeboScoutMiniSim.html#agilex-workspace">AgileX Workspace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ScoutMini/GazeboScoutMiniSim.html#scout-mini-simulation">Scout Mini Simulation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ScoutMini/purchas.html">Contact us / Scout Mini Quote</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../Ranger_Mini.html"><strong>Ranger Mini</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="about.html">About Ranger Mini</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="about.html#four-modes">Four Modes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="about.html#battery">Battery</a></li>
+<li class="toctree-l3"><a class="reference internal" href="about.html#specifications">Specifications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="about.html#video-of-ranger-mini">Video of Ranger Mini</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="GazeboRangSim.html">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="GazeboRangSim.html#requirments">Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="GazeboRangSim.html#agilex-workspace">AgileX Workspace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="GazeboRangSim.html#ranger-mini-simulation">Ranger Mini Simulation</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Contact us / Ranger Mini Quote</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Tracer.html"><strong>Tracer</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Tracer/about.html">About Tracer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Tracer/about.html#development">Development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Tracer/about.html#specifications">Specifications</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Tracer/GazeboTraceSim.html">Gazebo Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Tracer/GazeboTraceSim.html#requirments">Requirments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Tracer/GazeboTraceSim.html#agilex-workspace">AgileX Workspace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Tracer/GazeboTraceSim.html#tracer-simulation">Tracer Simulation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Tracer/purchas.html">Contact us / Tracer Quote</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #FFFFFF" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Indro Robotics Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../Ranger_Mini.html"><strong>Ranger Mini</strong></a> &raquo;</li>
+      <li>Contact us / Ranger Mini Quote</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/EllaHayashiIndro/Documentation/blob/rolling/source/Ranger_Mini/purchas.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="toctree-wrapper compound">
+</div>
+<div class="section" id="contact-us-ranger-mini-quote">
+<h1>Contact us / Ranger Mini Quote<a class="headerlink" href="#contact-us-ranger-mini-quote" title="Permalink to this headline"></a></h1>
+<p>We would love to hear from you and answer any product questions!</p>
+<div class="dp-row">
+        <div class="dp-col dp-col-12 dp-col-md-4 dp-col-lg-4">
+                <span class="wpcf7-form-control-wrap your-name">
+                        <input type="text" id="userName" name="your-name" value size="40" class="wpcf7-form-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name*">
+                </span>
+        </div>
+        <div class="dp-col dp-col-12 dp-col-md-4 dp-col-lg-4">
+                <span class="wpcf7-form-control-wrap your-email">
+                        <input type="email" id="userEmail" name="your-email" value size="40" class="wpcf7-form-form-control wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*">
+                </span>
+        </div>
+        <div class="dp-col dp-col-12 dp-col-md-4 dp-col-lg-4">
+                <span class="wpcf7-form-control-wrap your-phone">
+                        <input type="text" id="userPhone" name="your-phone" value size="40" class="wpcf7-form-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone*">
+                </span>
+        </div>
+</div><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<textarea rows cols id="inputString" style="width:100%;height:100px;">I am interested in information/prices on the Ranger Mini model and would like to know more about InDro Robotics products!</textarea><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<button id="emailButton" class="btn primary" title onclick="sendEmail()">Send Email</button>
+<p id="demo">
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+
+function sendEmail() {
+
+        userNameVar = document.getElementById("userName").value;
+        userEmailVar = String(document.getElementById("userEmail").value);
+        userPhoneVar = document.getElementById("userPhone").value;
+        const userContentVar = String(document.getElementById("inputString").value) + "\n\n" + "Client Name: " + String(userNameVar) + ",\n" + "Client Phone: " + String(userPhoneVar) + ",\n" + "Client Email: " + String(userEmailVar);
+
+        if(userContentVar!="" && userNameVar !="" && userEmailVar !="" && userPhoneVar !="")
+        {
+                try
+                {
+                        document.getElementById("demo").innerHTML = "mail sent";
+                        Email.send({
+                        Host: "smtp.gmail.com",
+                        Username: "InDroDevelopment@gmail.com",
+                        Password: "publicPasswordIndro",
+                        To: 'InDroDevelopment@gmail.com',
+                        From: 'InDroDevelopment@gmail.com',
+                        Subject: "Email from Indro Documentation Site",
+                        Body: userContentVar,
+                        })
+                        .then(function (message) {alert("mail sent successfully")});
+                }
+                catch(e)
+                {
+                        document.getElementById("demo").innerHTML = "email was unable to send";
+                }
+        }
+        else
+        {
+                document.getElementById("demo").innerHTML = "missing input";
+        }
+}
+</script><div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="GazeboRangSim.html" class="btn btn-neutral float-left" title="Gazebo Simulation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Tracer.html" class="btn btn-neutral float-right" title="Tracer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Ella Hayashi.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

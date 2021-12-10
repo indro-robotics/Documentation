@@ -10,6 +10,7 @@
 
    ScoutMini/about
    ScoutMini/GazeboScoutMiniSim
+   ScoutMini/purchas
 
 
 Scout Mini is an AgileX robot with all-terrain high-speed mini UGV with four-wheel differential drive, independent suspension, in-situ differential rotation and other features. The Scout Mini has a maximum speed of 10 km/h, which is an all-around mobile research platform specially designed for cutting-edge scientific experiments.
